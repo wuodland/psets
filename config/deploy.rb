@@ -2,10 +2,10 @@
 lock "~> 3.11.0"
 
 set :application, "psets"
-set :repo_url, "git@ait-vision.org:web18-17"
+set :repo_url, "git@vgl-ait.org:web18-17.git"
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
-set :deploy_to, "/home/web15/psone"
+set :deploy_to, "/home/deploy/psets"
 
 
 append :linked_files, "config/database.yml", "config/master.key"

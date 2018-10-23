@@ -1,1 +1,1 @@
-server "web15.cs.ait.ac.th", user: "web15", roles: %w{app db web}
+server "web15.cs.ait.ac.th", user: "deploy", roles: %w{app db web}

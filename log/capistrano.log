@@ -86,3 +86,28 @@
   INFO [6a15c052] Finished in 0.057 seconds with exit status 0 (successful).
   INFO [6e3ebea9] Running /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD as web15@web15.cs.ait.ac.th
  DEBUG [6e3ebea9] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:48:02 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [3afd8a98] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [3afd8a98] Command: [ -d $HOME/.rbenv ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:48:55 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c5dedd97] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [c5dedd97] Command: [ -d $HOME/.rbenv ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:49:54 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6cd8865f] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [6cd8865f] Command: [ -d $HOME/.rbenv ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:53:22 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f2fc8e5d] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [f2fc8e5d] Command: [ -d $HOME/.rbenv ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:53:47 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [cc51b636] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [cc51b636] Command: [ -d $HOME/.rbenv ]
