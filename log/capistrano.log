@@ -1,0 +1,88 @@
+# Logfile created on 2018-10-23 19:19:31 +0700 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:19:31 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2550fb96] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [2550fb96] Command: [ -d $HOME/.rbenv ]
+ DEBUG [9e0a0f45] Finished in 1.703 seconds with exit status 0 (successful).
+ DEBUG [05233a9f] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as web15@web15.cs.ait.ac.th
+ DEBUG [05233a9f] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [108b17ec] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [35c9e899] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [35c9e899] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [5a89e4b3] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [2bce9d5a] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as web15@web15.cs.ait.ac.th
+ DEBUG [2bce9d5a] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [ea8d9ae3] 	true
+ DEBUG [ea8d9ae3] Finished in 1.424 seconds with exit status 0 (successful).
+ DEBUG [7906d9ea] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [7906d9ea] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [817a8882] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [f6d89678] Running /usr/bin/env mkdir -p /tmp as web15@web15.cs.ait.ac.th
+ DEBUG [f6d89678] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [12287424] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 100.0%
+  INFO [61c9ee23] Running /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh as web15@web15.cs.ait.ac.th
+ DEBUG [61c9ee23] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh )
+  INFO [fb0e8c1d] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [75534c08] Running /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD as web15@web15.cs.ait.ac.th
+ DEBUG [75534c08] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:21:21 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1be64c61] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [1be64c61] Command: [ -d $HOME/.rbenv ]
+ DEBUG [525aa938] Finished in 1.521 seconds with exit status 0 (successful).
+ DEBUG [1cb2ee3f] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as web15@web15.cs.ait.ac.th
+ DEBUG [1cb2ee3f] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [cc25f1a6] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [e266bc37] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [e266bc37] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [08f3ade3] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [ddd9968a] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as web15@web15.cs.ait.ac.th
+ DEBUG [ddd9968a] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [519e1a26] 	true
+ DEBUG [519e1a26] Finished in 1.016 seconds with exit status 0 (successful).
+ DEBUG [243069e0] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [243069e0] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [51abb68d] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [cc31ebf7] Running /usr/bin/env mkdir -p /tmp as web15@web15.cs.ait.ac.th
+ DEBUG [cc31ebf7] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [65c19f10] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 100.0%
+  INFO [8089c8f0] Running /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh as web15@web15.cs.ait.ac.th
+ DEBUG [8089c8f0] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh )
+  INFO [fe38251f] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [3a6ac5f1] Running /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD as web15@web15.cs.ait.ac.th
+ DEBUG [3a6ac5f1] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 19:33:03 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [1e2d6fe3] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
+ DEBUG [1e2d6fe3] Command: [ -d $HOME/.rbenv ]
+ DEBUG [b94b2e0a] Finished in 1.527 seconds with exit status 0 (successful).
+ DEBUG [d66806ac] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as web15@web15.cs.ait.ac.th
+ DEBUG [d66806ac] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [b58b2741] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [85661348] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [85661348] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [0a45e31c] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [8ad1d618] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as web15@web15.cs.ait.ac.th
+ DEBUG [8ad1d618] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [dd47434b] 	true
+ DEBUG [dd47434b] Finished in 1.014 seconds with exit status 0 (successful).
+ DEBUG [e3ef0620] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as web15@web15.cs.ait.ac.th
+ DEBUG [e3ef0620] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [50f4df89] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [a3ea9969] Running /usr/bin/env mkdir -p /tmp as web15@web15.cs.ait.ac.th
+ DEBUG [a3ea9969] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [10826e18] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 100.0%
+  INFO [2958a14e] Running /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh as web15@web15.cs.ait.ac.th
+ DEBUG [2958a14e] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh )
+  INFO [6a15c052] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [6e3ebea9] Running /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD as web15@web15.cs.ait.ac.th
+ DEBUG [6e3ebea9] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote git@ait-vision.org:web18-17 HEAD )
