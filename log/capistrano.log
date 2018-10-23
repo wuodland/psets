@@ -55,3 +55,32 @@ fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
 and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-24 00:18:37 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d63154f4] Running [ -d $HOME/.rbenv ] as deploy@web15.cs.ait.ac.th
+ DEBUG [d63154f4] Command: [ -d $HOME/.rbenv ]
+ DEBUG [bad9570b] Finished in 1.564 seconds with exit status 0 (successful).
+ DEBUG [8d38da27] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as deploy@web15.cs.ait.ac.th
+ DEBUG [8d38da27] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [d100aeb0] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [5703186f] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [5703186f] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [2c4bab7f] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [584adf71] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as deploy@web15.cs.ait.ac.th
+ DEBUG [584adf71] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [583897b0] 	true
+ DEBUG [583897b0] Finished in 0.569 seconds with exit status 0 (successful).
+ DEBUG [53c765e3] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [53c765e3] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [575af9a4] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [a1810cae] Running /usr/bin/env mkdir -p /tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [a1810cae] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [c0a7651d] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 100.0%
+  INFO [b4fe1098] Running /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh as deploy@web15.cs.ait.ac.th
+ DEBUG [b4fe1098] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh )
+  INFO [4cb75c2e] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [bdf0cc06] Running /usr/bin/env git ls-remote git@vgl-ait.org:web18-17.git HEAD as deploy@web15.cs.ait.ac.th
+ DEBUG [bdf0cc06] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote git@vgl-ait.org:web18-17.git HEAD )

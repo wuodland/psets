@@ -13,7 +13,8 @@ append :linked_files, "config/database.yml", "config/master.key"
 append :linked_dirs, "log", "tmp", "public/system", ".bundle"
 
 set :default_env, {'HTTP_PROXY'=>'192.41.170.23:3128',
-                   'HTTPS_PROXY'=>'192.41.170.23:3128'}
+                   'HTTPS_PROXY'=>'192.41.170.23:3128',
+                   'BAZOOKA_USER'=>'st119967' }
 
 set :keep_releases, 5
 
