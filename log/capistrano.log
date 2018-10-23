@@ -111,3 +111,72 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [cc51b636] Running [ -d $HOME/.rbenv ] as web15@web15.cs.ait.ac.th
  DEBUG [cc51b636] Command: [ -d $HOME/.rbenv ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 22:23:28 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [56caceaa] Running [ -d $HOME/.rbenv ] as deploy@web15.cs.ait.ac.th
+ DEBUG [56caceaa] Command: [ -d $HOME/.rbenv ]
+ DEBUG [08020723] Finished in 1.516 seconds with exit status 0 (successful).
+ DEBUG [6a858389] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as deploy@web15.cs.ait.ac.th
+ DEBUG [6a858389] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [e706209b] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [0c230750] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [0c230750] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [1c09afe8] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [21ee99fd] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as deploy@web15.cs.ait.ac.th
+ DEBUG [21ee99fd] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [e8feda1c] 	true
+ DEBUG [e8feda1c] Finished in 1.013 seconds with exit status 0 (successful).
+ DEBUG [1946f094] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [1946f094] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [e50a9d02] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [e5bad340] Running /usr/bin/env mkdir -p /tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [e5bad340] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [41b48caf] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 22:33:22 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a02ce8ae] Running [ -d $HOME/.rbenv ] as deploy@web15.cs.ait.ac.th
+ DEBUG [a02ce8ae] Command: [ -d $HOME/.rbenv ]
+ DEBUG [6d5bbbbf] Finished in 1.589 seconds with exit status 0 (successful).
+ DEBUG [4ec812e6] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as deploy@web15.cs.ait.ac.th
+ DEBUG [4ec812e6] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [51ef51d1] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [4ae6c5dc] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [4ae6c5dc] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [0ff6f29c] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [57b7bab1] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as deploy@web15.cs.ait.ac.th
+ DEBUG [57b7bab1] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [b3dc722f] 	true
+ DEBUG [b3dc722f] Finished in 0.603 seconds with exit status 0 (successful).
+ DEBUG [32a14774] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [32a14774] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [f35a5684] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [db919bb0] Running /usr/bin/env mkdir -p /tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [db919bb0] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a78ff0bd] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-23 22:52:17 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c7808f1f] Running [ -d $HOME/.rbenv ] as deploy@web15.cs.ait.ac.th
+ DEBUG [c7808f1f] Command: [ -d $HOME/.rbenv ]
+ DEBUG [19cb9ef8] Finished in 1.255 seconds with exit status 0 (successful).
+ DEBUG [9e30cc8b] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as deploy@web15.cs.ait.ac.th
+ DEBUG [9e30cc8b] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [cb43b0b8] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [ac16105c] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [ac16105c] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [ba6dfaa3] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [5297f6ae] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as deploy@web15.cs.ait.ac.th
+ DEBUG [5297f6ae] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [d7fe953b] 	true
+ DEBUG [d7fe953b] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [bd18a200] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [bd18a200] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [28f99da1] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [d53d3354] Running /usr/bin/env mkdir -p /tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [d53d3354] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [f38fd628] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
