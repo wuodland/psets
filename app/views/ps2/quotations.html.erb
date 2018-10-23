@@ -1,0 +1,79 @@
+<h1>ProblemSet2#Quotations</h1>
+
+  <table><thead><tr>
+  <th>Author name</th>
+  <th>Quotation</th>
+  <th>Category</th>
+  <th colspan="1"></th>
+  </tr>
+  </thead>
+  
+ 
+    <tbody>
+    <% for quotation in @quotations1 %>
+    <tr>
+      <td><%= quotation.author_name %>      </td> 
+      <td>   <%=  quotation.quote %>        </td>
+      <td>  <%=  quotation.category %>      </td>
+      <td>  <%= link_to "Kill", killed_path(quotation) %> </td>
+      </tr></tbody>
+  <% end %>
+  </table>
+  <% if cookies[:id] != "a" %>
+  <%= link_to "DELETE PERSONALIZATION", :action => :del %>
+  <% end %>
+<% if params[:sort_by] == "date" %>
+  <%= link_to "Sort by category", :action => :quotations, :sort_by => :category %>
+<% else %>
+  <%= link_to "Sort by date", :action => :quotations, :sort_by => :date %>
+<% end %>
+<%= form_tag(search_page_path, :method => "get",   
+    class: 'navbar-form navbar-left') do %>  
+  <div class="input-group">  
+    <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
+    <div class="input-group-btn">  
+      <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+    </div>  
+  </div>  
+<% end %>
+<%= form_with(url: "/ps2/import", method: "post", local: true) do |form| %>
+  <%= form.file_field(:q) %>
+  <%= form.submit("import") %>
+
+<% end %>
+<hr/>
+<h3>New quotation</h3>
+<%= form_for @quotation, :url => { :action => :quotations } do |form| %>
+  <fieldset>
+    <legend>Enter details</legend>
+    <div class="form_row">
+      <%= form.label :author_name %>
+      <%= form.text_field :author_name, :size => 20, :maxlength => 100 %>
+    </div>
+    <br/>
+
+    <div class="form_row">
+      <%= form.label :category %>
+      
+      <%= form.select :category,  Quotation.select(:category).map(&:category).uniq  %>
+      <%= form.text_field :category%>
+     
+      
+    </div>
+    <br/>
+    <div class="form_row">
+      <%= form.label :quote %>
+      <%= form.text_area :quote, :rows => 2, :cols => 40, :maxlength => 500 %>
+    </div>
+  </fieldset>
+  <p>
+  <div class="form_row">
+    <%= form.submit 'Create' %>
+  </div>
+  </p>
+ <%= link_to "JSON Export", export_to_json_path %>
+  </br>
+  <%= link_to "XML Export", export_to_xml_path %>
+
+
+<% end %>

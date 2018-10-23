@@ -1,0 +1,29 @@
+<h1>ProblemSet1#Google News</h1>
+<h3> Here we implement  retreival of Google News title, thumbnail and article link using the Nokogiri HTML/XML parser and arrange them on the basis of main headlines and world news. </h3>
+
+<h1>Google News</h1>
+<br>
+<h1> Main Headlines </h1><table>
+<% for j in 0..7%>
+	
+    <tr><td> <a href="https://news.google.com/<%= @head_link[j].xpath("@href") %> "><%= @head_title[j].css('span').xpath('text()') %></a> </td>
+	    <td>    <img alt="placeholder" src=" <%= @head_img[j].xpath("@src") %>"> </td></tr>
+        
+ 
+<% end %> 
+</table> <br> <br>
+    
+     <h1> World News </h1>
+     <table>
+<% for i in 0..7%>  
+	<tr><td>  <a href="https://news.google.com/<%= @hyplink[i].xpath("@href") %> "><%= @title[i].css('span').xpath('text()') %></a> </td>
+  <td>  <img alt="placeholder" src=" <%= @thumbs[i].xpath("@src") %> "> </td>
+    
+  </tr>
+<% end %>
+     
+     </table> <br> <br>
+
+
+
+
