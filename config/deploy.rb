@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "psets"
-set :repo_url, "git@vgl-ait.org:web18-17.git"
+set :repo_url, "https://github.com/wuodland/psets.git"
 set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 set :deploy_to, "/home/deploy/psets"
