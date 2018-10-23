@@ -1,6 +1,0 @@
-hello world
-
-hello from visutr 1
-
-hello from feature 1
-
