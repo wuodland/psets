@@ -7404,3 +7404,32 @@ Processing by Ps2Controller#quotations as HTML
 Completed 200 OK in 155ms (Views: 97.7ms | ActiveRecord: 26.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-24 15:03:03 +0700
+Started GET "/" for 127.0.0.1 at 2018-10-24 15:03:03 +0700
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (2.5ms)
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 471ms (Views: 459.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 488ms (Views: 459.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:03:13 +0700
+Processing by Ps2Controller#quotations as HTML
+  Rendering ps2/quotations.html.erb within layouts/application
+  [1m[36mQuotation Load (2.6ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" WHERE "quotations"."id" NOT IN ($1, $2, $3)[0m  [["id", 0], ["id", 1], ["id", 34]]
+  ↳ app/views/ps2/quotations.html.erb:13
+  [1m[36mQuotation Load (0.4ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/ps2/quotations.html.erb:58
+  Rendered ps2/quotations.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 102ms (Views: 67.5ms | ActiveRecord: 18.3ms)
+
+

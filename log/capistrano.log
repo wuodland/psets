@@ -2665,3 +2665,252 @@ Caused by:
   INFO [26a22a83] Running /usr/bin/env echo "Branch master (at 690da841158ada60b7452f675fabefe87535b40e) deployed as release 20181023182323 by karanrajbaruah" >> /home/deploy/psets/revisions.log as deploy@web15.cs.ait.ac.th
  DEBUG [26a22a83] Command: cd /home/deploy/psets/releases && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "Branch master (at 690da841158ada60b7452f675fabefe87535b40e) deployed as release 20181023182323 by karanrajbaruah" >> /home/deploy/psets/revisions.log )
   INFO [8dfb0e46] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-10-24 11:52:17 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0c8484bd] Running [ -d $HOME/.rbenv ] as deploy@web15.cs.ait.ac.th
+ DEBUG [0c8484bd] Command: [ -d $HOME/.rbenv ]
+ DEBUG [3e082195] Finished in 15.968 seconds with exit status 0 (successful).
+ DEBUG [47444896] Running [ -d $HOME/.rbenv/plugins/ruby-build ] as deploy@web15.cs.ait.ac.th
+ DEBUG [47444896] Command: [ -d $HOME/.rbenv/plugins/ruby-build ]
+ DEBUG [c2e358e8] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [bf972648] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [bf972648] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [21e6c94b] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [e07ca917] Running $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ as deploy@web15.cs.ait.ac.th
+ DEBUG [e07ca917] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec gem query --quiet --installed --name-matches ^bundler$ )
+ DEBUG [806fd936] 	true
+ DEBUG [806fd936] Finished in 1.211 seconds with exit status 0 (successful).
+ DEBUG [86473a7f] Running [ -d $HOME/.rbenv/versions/2.5.1 ] as deploy@web15.cs.ait.ac.th
+ DEBUG [86473a7f] Command: [ -d $HOME/.rbenv/versions/2.5.1 ]
+ DEBUG [6d58caf1] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [a49c93fa] Running /usr/bin/env mkdir -p /tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [a49c93fa] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [746afb06] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 0.0%
+  INFO Uploading /tmp/git-ssh-psets-production-karanrajbaruah.sh 100.0%
+  INFO [7a1cea52] Running /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh as deploy@web15.cs.ait.ac.th
+ DEBUG [7a1cea52] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-psets-production-karanrajbaruah.sh )
+  INFO [d5611f8f] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [c77b55d0] Running /usr/bin/env git ls-remote https://github.com/wuodland/psets.git HEAD as deploy@web15.cs.ait.ac.th
+ DEBUG [c77b55d0] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git ls-remote https://github.com/wuodland/psets.git HEAD )
+ DEBUG [ed30e7c7] 	71f33467da5f7847339e73a92dedf61c31b876e2	HEAD
+  INFO [ed30e7c7] Finished in 1.635 seconds with exit status 0 (successful).
+  INFO [df99092b] Running /usr/bin/env mkdir -p /home/deploy/psets/shared /home/deploy/psets/releases as deploy@web15.cs.ait.ac.th
+ DEBUG [df99092b] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/shared /home/deploy/psets/releases )
+  INFO [50a7a342] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [a5a901cc] Running /usr/bin/env mkdir -p /home/deploy/psets/shared/log /home/deploy/psets/shared/tmp /home/deploy/psets/shared/public/system /home/deploy/psets/shared/.bundle /home/deploy/psets/shared/public/assets as deploy@web15.cs.ait.ac.th
+ DEBUG [a5a901cc] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/shared/log /home/deploy/psets/shared/tmp /home/deploy/psets/shared/public/system /home/deploy/psets/shared/.bundle /home/deploy/psets/shared/public/assets )
+  INFO [638a2b1f] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [aa57a594] Running /usr/bin/env mkdir -p /home/deploy/psets/shared/config as deploy@web15.cs.ait.ac.th
+ DEBUG [aa57a594] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/shared/config )
+  INFO [b3ac0cd2] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [b36a8a29] Running [ -f /home/deploy/psets/shared/config/database.yml ] as deploy@web15.cs.ait.ac.th
+ DEBUG [b36a8a29] Command: [ -f /home/deploy/psets/shared/config/database.yml ]
+ DEBUG [91573e86] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [f090f916] Running [ -f /home/deploy/psets/shared/config/master.key ] as deploy@web15.cs.ait.ac.th
+ DEBUG [f090f916] Command: [ -f /home/deploy/psets/shared/config/master.key ]
+ DEBUG [8fed9b58] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [9c3dc6e5] Running [ -f /home/deploy/psets/current/REVISION ] as deploy@web15.cs.ait.ac.th
+ DEBUG [9c3dc6e5] Command: [ -f /home/deploy/psets/current/REVISION ]
+ DEBUG [43886d11] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [5c06e655] Running /usr/bin/env cat /home/deploy/psets/current/REVISION 2>/dev/null as deploy@web15.cs.ait.ac.th
+ DEBUG [5c06e655] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env cat /home/deploy/psets/current/REVISION 2>/dev/null )
+ DEBUG [36d91474] 	690da841158ada60b7452f675fabefe87535b40e
+ DEBUG [36d91474] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [a122bba0] Running [ -f /home/deploy/psets/repo/HEAD ] as deploy@web15.cs.ait.ac.th
+ DEBUG [a122bba0] Command: [ -f /home/deploy/psets/repo/HEAD ]
+ DEBUG [1f6fc19b] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/psets/repo
+ DEBUG [d6e31226] Running if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [d6e31226] Command: if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi
+ DEBUG [1f6c62e9] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [e24fde69] Running /usr/bin/env git remote set-url origin https://github.com/wuodland/psets.git as deploy@web15.cs.ait.ac.th
+ DEBUG [e24fde69] Command: cd /home/deploy/psets/repo && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git remote set-url origin https://github.com/wuodland/psets.git )
+  INFO [8364fcf7] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [731f6e8e] Running /usr/bin/env git remote update --prune as deploy@web15.cs.ait.ac.th
+ DEBUG [731f6e8e] Command: cd /home/deploy/psets/repo && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [dc245c8f] 	Fetching origin
+ DEBUG [dc245c8f] 	From https://github.com/wuodland/psets
+ DEBUG [dc245c8f] 	   690da84..71f3346  master     -> master
+  INFO [dc245c8f] Finished in 2.329 seconds with exit status 0 (successful).
+ DEBUG [13db5f31] Running if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [13db5f31] Command: if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi
+ DEBUG [9f9d94d7] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [8ba3f3a2] Running /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236 as deploy@web15.cs.ait.ac.th
+ DEBUG [8ba3f3a2] Command: cd /home/deploy/psets/repo && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236 )
+  INFO [a1692d1a] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [11fe5405] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/psets/releases/20181024045236 as deploy@web15.cs.ait.ac.th
+ DEBUG [11fe5405] Command: cd /home/deploy/psets/repo && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/psets/releases/20181024045236 )
+  INFO [7623989b] Finished in 1.200 seconds with exit status 0 (successful).
+ DEBUG [3e365edf] Running if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [3e365edf] Command: if test ! -d /home/deploy/psets/repo; then echo "Directory does not exist '/home/deploy/psets/repo'" 1>&2; false; fi
+ DEBUG [d6126327] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [7f79a972] Running /usr/bin/env git rev-list --max-count=1 master as deploy@web15.cs.ait.ac.th
+ DEBUG [7f79a972] Command: cd /home/deploy/psets/repo && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-psets-production-karanrajbaruah.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5672e595] 	71f33467da5f7847339e73a92dedf61c31b876e2
+ DEBUG [5672e595] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [f4b773c7] Running if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [f4b773c7] Command: if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi
+ DEBUG [09021df5] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [1c714394] Running /usr/bin/env echo "71f33467da5f7847339e73a92dedf61c31b876e2" > REVISION as deploy@web15.cs.ait.ac.th
+ DEBUG [1c714394] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "71f33467da5f7847339e73a92dedf61c31b876e2" > REVISION )
+  INFO [73e1ae7a] Finished in 0.074 seconds with exit status 0 (successful).
+  INFO [f6625916] Running /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236/config as deploy@web15.cs.ait.ac.th
+ DEBUG [f6625916] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236/config )
+  INFO [0c7f21e1] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [154134e2] Running [ -L /home/deploy/psets/releases/20181024045236/config/database.yml ] as deploy@web15.cs.ait.ac.th
+ DEBUG [154134e2] Command: [ -L /home/deploy/psets/releases/20181024045236/config/database.yml ]
+ DEBUG [5975f87d] Finished in 0.053 seconds with exit status 1 (failed).
+ DEBUG [3f293aac] Running [ -f /home/deploy/psets/releases/20181024045236/config/database.yml ] as deploy@web15.cs.ait.ac.th
+ DEBUG [3f293aac] Command: [ -f /home/deploy/psets/releases/20181024045236/config/database.yml ]
+ DEBUG [0218bdab] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [d7152c33] Running /usr/bin/env rm /home/deploy/psets/releases/20181024045236/config/database.yml as deploy@web15.cs.ait.ac.th
+ DEBUG [d7152c33] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env rm /home/deploy/psets/releases/20181024045236/config/database.yml )
+  INFO [97283483] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [02816f1b] Running /usr/bin/env ln -s /home/deploy/psets/shared/config/database.yml /home/deploy/psets/releases/20181024045236/config/database.yml as deploy@web15.cs.ait.ac.th
+ DEBUG [02816f1b] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/config/database.yml /home/deploy/psets/releases/20181024045236/config/database.yml )
+  INFO [18329e4a] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [8616040b] Running [ -L /home/deploy/psets/releases/20181024045236/config/master.key ] as deploy@web15.cs.ait.ac.th
+ DEBUG [8616040b] Command: [ -L /home/deploy/psets/releases/20181024045236/config/master.key ]
+ DEBUG [dfcaf825] Finished in 0.055 seconds with exit status 1 (failed).
+ DEBUG [82379a0a] Running [ -f /home/deploy/psets/releases/20181024045236/config/master.key ] as deploy@web15.cs.ait.ac.th
+ DEBUG [82379a0a] Command: [ -f /home/deploy/psets/releases/20181024045236/config/master.key ]
+ DEBUG [f1fa4c5e] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [41528cf4] Running /usr/bin/env rm /home/deploy/psets/releases/20181024045236/config/master.key as deploy@web15.cs.ait.ac.th
+ DEBUG [41528cf4] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env rm /home/deploy/psets/releases/20181024045236/config/master.key )
+  INFO [ef33bcc5] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [ffe0e9fd] Running /usr/bin/env ln -s /home/deploy/psets/shared/config/master.key /home/deploy/psets/releases/20181024045236/config/master.key as deploy@web15.cs.ait.ac.th
+ DEBUG [ffe0e9fd] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/config/master.key /home/deploy/psets/releases/20181024045236/config/master.key )
+  INFO [75451531] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [6c8fd75f] Running /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236 /home/deploy/psets/releases/20181024045236/public as deploy@web15.cs.ait.ac.th
+ DEBUG [6c8fd75f] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236 /home/deploy/psets/releases/20181024045236/public )
+  INFO [70611ccc] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [86591d66] Running [ -L /home/deploy/psets/releases/20181024045236/log ] as deploy@web15.cs.ait.ac.th
+ DEBUG [86591d66] Command: [ -L /home/deploy/psets/releases/20181024045236/log ]
+ DEBUG [7d7247c4] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [890616f3] Running [ -d /home/deploy/psets/releases/20181024045236/log ] as deploy@web15.cs.ait.ac.th
+ DEBUG [890616f3] Command: [ -d /home/deploy/psets/releases/20181024045236/log ]
+ DEBUG [fd86305d] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [b133db94] Running /usr/bin/env rm -rf /home/deploy/psets/releases/20181024045236/log as deploy@web15.cs.ait.ac.th
+ DEBUG [b133db94] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env rm -rf /home/deploy/psets/releases/20181024045236/log )
+  INFO [bfed3951] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [cf35de4a] Running /usr/bin/env ln -s /home/deploy/psets/shared/log /home/deploy/psets/releases/20181024045236/log as deploy@web15.cs.ait.ac.th
+ DEBUG [cf35de4a] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/log /home/deploy/psets/releases/20181024045236/log )
+  INFO [924c2b4d] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [a376abe2] Running [ -L /home/deploy/psets/releases/20181024045236/tmp ] as deploy@web15.cs.ait.ac.th
+ DEBUG [a376abe2] Command: [ -L /home/deploy/psets/releases/20181024045236/tmp ]
+ DEBUG [e41e7d67] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [484bc2f7] Running [ -d /home/deploy/psets/releases/20181024045236/tmp ] as deploy@web15.cs.ait.ac.th
+ DEBUG [484bc2f7] Command: [ -d /home/deploy/psets/releases/20181024045236/tmp ]
+ DEBUG [78126299] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [4a37e101] Running /usr/bin/env rm -rf /home/deploy/psets/releases/20181024045236/tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [4a37e101] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env rm -rf /home/deploy/psets/releases/20181024045236/tmp )
+  INFO [8aec1128] Finished in 0.187 seconds with exit status 0 (successful).
+  INFO [324f5dda] Running /usr/bin/env ln -s /home/deploy/psets/shared/tmp /home/deploy/psets/releases/20181024045236/tmp as deploy@web15.cs.ait.ac.th
+ DEBUG [324f5dda] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/tmp /home/deploy/psets/releases/20181024045236/tmp )
+  INFO [77362048] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [6de61dad] Running [ -L /home/deploy/psets/releases/20181024045236/public/system ] as deploy@web15.cs.ait.ac.th
+ DEBUG [6de61dad] Command: [ -L /home/deploy/psets/releases/20181024045236/public/system ]
+ DEBUG [d826413e] Finished in 0.056 seconds with exit status 1 (failed).
+ DEBUG [91d942b5] Running [ -d /home/deploy/psets/releases/20181024045236/public/system ] as deploy@web15.cs.ait.ac.th
+ DEBUG [91d942b5] Command: [ -d /home/deploy/psets/releases/20181024045236/public/system ]
+ DEBUG [0c241899] Finished in 0.054 seconds with exit status 1 (failed).
+  INFO [de3879df] Running /usr/bin/env ln -s /home/deploy/psets/shared/public/system /home/deploy/psets/releases/20181024045236/public/system as deploy@web15.cs.ait.ac.th
+ DEBUG [de3879df] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/public/system /home/deploy/psets/releases/20181024045236/public/system )
+  INFO [c735d8bb] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [0d0e17a7] Running [ -L /home/deploy/psets/releases/20181024045236/.bundle ] as deploy@web15.cs.ait.ac.th
+ DEBUG [0d0e17a7] Command: [ -L /home/deploy/psets/releases/20181024045236/.bundle ]
+ DEBUG [d5566865] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [625e20fd] Running [ -d /home/deploy/psets/releases/20181024045236/.bundle ] as deploy@web15.cs.ait.ac.th
+ DEBUG [625e20fd] Command: [ -d /home/deploy/psets/releases/20181024045236/.bundle ]
+ DEBUG [39eb6c9f] Finished in 0.057 seconds with exit status 1 (failed).
+  INFO [2133fac2] Running /usr/bin/env ln -s /home/deploy/psets/shared/.bundle /home/deploy/psets/releases/20181024045236/.bundle as deploy@web15.cs.ait.ac.th
+ DEBUG [2133fac2] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/.bundle /home/deploy/psets/releases/20181024045236/.bundle )
+  INFO [008fb9d4] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [cee1327c] Running [ -L /home/deploy/psets/releases/20181024045236/public/assets ] as deploy@web15.cs.ait.ac.th
+ DEBUG [cee1327c] Command: [ -L /home/deploy/psets/releases/20181024045236/public/assets ]
+ DEBUG [63c51752] Finished in 0.056 seconds with exit status 1 (failed).
+ DEBUG [880e5fde] Running [ -d /home/deploy/psets/releases/20181024045236/public/assets ] as deploy@web15.cs.ait.ac.th
+ DEBUG [880e5fde] Command: [ -d /home/deploy/psets/releases/20181024045236/public/assets ]
+ DEBUG [28f7a7bb] Finished in 0.057 seconds with exit status 1 (failed).
+  INFO [20465b07] Running /usr/bin/env ln -s /home/deploy/psets/shared/public/assets /home/deploy/psets/releases/20181024045236/public/assets as deploy@web15.cs.ait.ac.th
+ DEBUG [20465b07] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/shared/public/assets /home/deploy/psets/releases/20181024045236/public/assets )
+  INFO [46c546cd] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [1fdb761b] Running if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [1fdb761b] Command: if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi
+ DEBUG [7fc00b03] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [e47440c0] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/psets/shared/bundle as deploy@web15.cs.ait.ac.th
+ DEBUG [e47440c0] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/psets/shared/bundle )
+ DEBUG [2dbac557] 	The Gemfile's dependencies are satisfied
+ DEBUG [2dbac557] Finished in 1.191 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [9004098c] Running if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [9004098c] Command: if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi
+ DEBUG [c55a5e09] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [7242e1a2] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@web15.cs.ait.ac.th
+ DEBUG [7242e1a2] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [26eb6a85] 	yarn install v1.10.1
+ DEBUG [26eb6a85] 	info No lockfile found.
+ DEBUG [26eb6a85] 	[1/4] Resolving packages...
+ DEBUG [26eb6a85] 	[2/4] Fetching packages...
+ DEBUG [26eb6a85] 	[3/4] Linking dependencies...
+ DEBUG [26eb6a85] 	[4/4] Building fresh packages...
+ DEBUG [26eb6a85] 	success Saved lockfile.
+ DEBUG [26eb6a85] 	Done in 0.21s.
+  INFO [26eb6a85] Finished in 5.952 seconds with exit status 0 (successful).
+ DEBUG [5a4de6f3] Running if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [5a4de6f3] Command: if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi
+ DEBUG [80cc83ec] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [c322b360] Running /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236/assets_manifest_backup as deploy@web15.cs.ait.ac.th
+ DEBUG [c322b360] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mkdir -p /home/deploy/psets/releases/20181024045236/assets_manifest_backup )
+  INFO [da16efa3] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [fbd19967] Running /usr/bin/env ls /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest* as deploy@web15.cs.ait.ac.th
+ DEBUG [fbd19967] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ls /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest* )
+ DEBUG [4b15e6ee] 	/home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest-0b40287db120582622df92a48257538c.json
+ DEBUG [4b15e6ee] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [06d5c493] Running /usr/bin/env ls /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest* as deploy@web15.cs.ait.ac.th
+ DEBUG [06d5c493] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ls /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest* )
+ DEBUG [9dae7240] 	/home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest-0b40287db120582622df92a48257538c.json
+ DEBUG [9dae7240] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [808b4427] Running /usr/bin/env cp /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest-0b40287db120582622df92a48257538c.json /home/deploy/psets/releases/20181024045236/assets_manifest_backup as deploy@web15.cs.ait.ac.th
+ DEBUG [808b4427] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env cp /home/deploy/psets/releases/20181024045236/public/assets/.sprockets-manifest-0b40287db120582622df92a48257538c.json /home/deploy/psets/releases/20181024045236/assets_manifest_backup )
+  INFO [3a3743b7] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [70932b49] Running if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [70932b49] Command: if test ! -d /home/deploy/psets/releases/20181024045236; then echo "Directory does not exist '/home/deploy/psets/releases/20181024045236'" 1>&2; false; fi
+ DEBUG [0a26427c] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [92497dff] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@web15.cs.ait.ac.th
+ DEBUG [92497dff] Command: cd /home/deploy/psets/releases/20181024045236 && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+  INFO [07326518] Finished in 2.631 seconds with exit status 0 (successful).
+  INFO [9aaecfba] Running /usr/bin/env ln -s /home/deploy/psets/releases/20181024045236 /home/deploy/psets/releases/current as deploy@web15.cs.ait.ac.th
+ DEBUG [9aaecfba] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ln -s /home/deploy/psets/releases/20181024045236 /home/deploy/psets/releases/current )
+  INFO [7c8e185c] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [ab878b46] Running /usr/bin/env mv /home/deploy/psets/releases/current /home/deploy/psets as deploy@web15.cs.ait.ac.th
+ DEBUG [ab878b46] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env mv /home/deploy/psets/releases/current /home/deploy/psets )
+  INFO [a1de82a7] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [1293b9e8] Running /usr/bin/env touch /home/deploy/psets/releases/20181024045236/tmp/restart.txt as deploy@web15.cs.ait.ac.th
+ DEBUG [1293b9e8] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env touch /home/deploy/psets/releases/20181024045236/tmp/restart.txt )
+  INFO [7b80b799] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [4107648a] Running /usr/bin/env ls -x /home/deploy/psets/releases as deploy@web15.cs.ait.ac.th
+ DEBUG [4107648a] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env ls -x /home/deploy/psets/releases )
+ DEBUG [2a9a3e2b] 	20181023174952	20181023175645	20181023175912	20181023182134	20181023182323
+20181024045236
+ DEBUG [2a9a3e2b] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on web15.cs.ait.ac.th
+ DEBUG [5607376c] Running [ -d /home/deploy/psets/current ] as deploy@web15.cs.ait.ac.th
+ DEBUG [5607376c] Command: [ -d /home/deploy/psets/current ]
+ DEBUG [03cbd5b6] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [28255f69] Running /usr/bin/env readlink /home/deploy/psets/current as deploy@web15.cs.ait.ac.th
+ DEBUG [28255f69] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env readlink /home/deploy/psets/current )
+ DEBUG [925d945c] 	/home/deploy/psets/releases/20181024045236
+ DEBUG [925d945c] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [90bad6fa] Running /usr/bin/env rm -rf /home/deploy/psets/releases/20181023174952 as deploy@web15.cs.ait.ac.th
+ DEBUG [90bad6fa] Command: ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env rm -rf /home/deploy/psets/releases/20181023174952 )
+  INFO [c774a0a0] Finished in 0.199 seconds with exit status 0 (successful).
+ DEBUG [8f556793] Running if test ! -d /home/deploy/psets/releases; then echo "Directory does not exist '/home/deploy/psets/releases'" 1>&2; false; fi as deploy@web15.cs.ait.ac.th
+ DEBUG [8f556793] Command: if test ! -d /home/deploy/psets/releases; then echo "Directory does not exist '/home/deploy/psets/releases'" 1>&2; false; fi
+ DEBUG [3b158c11] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [875a2a24] Running /usr/bin/env echo "Branch master (at 71f33467da5f7847339e73a92dedf61c31b876e2) deployed as release 20181024045236 by karanrajbaruah" >> /home/deploy/psets/revisions.log as deploy@web15.cs.ait.ac.th
+ DEBUG [875a2a24] Command: cd /home/deploy/psets/releases && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "Branch master (at 71f33467da5f7847339e73a92dedf61c31b876e2) deployed as release 20181024045236 by karanrajbaruah" >> /home/deploy/psets/revisions.log )
+  INFO [e8780dcc] Finished in 0.060 seconds with exit status 0 (successful).
