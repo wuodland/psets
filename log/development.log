@@ -7433,3 +7433,188 @@ Processing by Ps2Controller#quotations as HTML
 Completed 200 OK in 102ms (Views: 67.5ms | ActiveRecord: 18.3ms)
 
 
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:09:44 +0700
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:10:01 +0700
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:10:01 +0700
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Ps2Controller#quotations as HTML
+Processing by Ps2Controller#quotations as HTML
+  Rendering ps2/quotations.html.erb within layouts/application
+  Rendering ps2/quotations.html.erb within layouts/application
+  [1m[36mQuotation Load (4.0ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" WHERE "quotations"."id" NOT IN ($1, $2, $3)[0m  [["id", 0], ["id", 1], ["id", 34]]
+  ↳ app/views/ps2/quotations.html.erb:13
+  [1m[36mQuotation Load (4.5ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" WHERE "quotations"."id" NOT IN ($1, $2, $3)[0m  [["id", 0], ["id", 1], ["id", 34]]
+  ↳ app/views/ps2/quotations.html.erb:13
+  [1m[36mQuotation Load (4.5ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/ps2/quotations.html.erb:58
+  Rendered ps2/quotations.html.erb within layouts/application (46.0ms)
+  [1m[36mQuotation Load (7.7ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/ps2/quotations.html.erb:58
+  Rendered ps2/quotations.html.erb within layouts/application (235.1ms)
+Completed 200 OK in 491ms (Views: 441.6ms | ActiveRecord: 19.1ms)
+
+
+Completed 200 OK in 501ms (Views: 447.9ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:10:29 +0700
+Processing by Ps2Controller#quotations as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/ps2_controller.rb:43:in `quotations'
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:11:30 +0700
+  
+PG::Error (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:698:in `set_client_encoding'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:698:in `configure_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:258:in `block in reconnect!'
+/usr/local/Cellar/ruby/2.5.1/lib/ruby/2.5.0/monitor.rb:226:in `mon_synchronize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:255:in `reconnect!'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:435:in `verify!'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:858:in `block in checkout_and_verify'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.1) lib/active_support/callbacks.rb:816:in `_run_checkout_callbacks'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:857:in `checkout_and_verify'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:139:in `clear_cache!'
+activerecord (5.2.1) lib/active_record/railtie.rb:164:in `block (3 levels) in <class:Railtie>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.1) lib/active_support/reloader.rb:121:in `class_unload!'
+railties (5.2.1) lib/rails/application/finisher.rb:177:in `block (2 levels) in <module:Finisher>'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.1) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:110:in `run!'
+activesupport (5.2.1) lib/active_support/reloader.rb:115:in `run!'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:72:in `block in run!'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:69:in `tap'
+activesupport (5.2.1) lib/active_support/execution_wrapper.rb:69:in `run!'
+activesupport (5.2.1) lib/active_support/reloader.rb:64:in `run!'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/ps2/quotations" for 127.0.0.1 at 2018-10-24 15:11:41 +0700
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Ps2Controller#quotations as HTML
+  Rendering ps2/quotations.html.erb within layouts/application
+  [1m[36mQuotation Load (3.1ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" WHERE "quotations"."id" != $1[0m  [["id", 0]]
+  ↳ app/views/ps2/quotations.html.erb:13
+  [1m[36mQuotation Load (0.4ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/ps2/quotations.html.erb:58
+  Rendered ps2/quotations.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 380ms (Views: 332.7ms | ActiveRecord: 16.1ms)
+
+

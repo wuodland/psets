@@ -28,7 +28,7 @@ class Ps2Controller < ApplicationController
   end  
   end
   def quotations
-    if cookies.permanent[:id] ==""
+    if cookies.permanent[:id].nil?
       cookies.permanent[:id] = "a" 
     end 
     if params[:quotation]
