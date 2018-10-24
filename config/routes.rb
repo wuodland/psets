@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get '/search' => 'ps2#search', :as => 'search_page'
   get '/ps2/:id/kill(.:format)' => 'ps2#kill', :as => 'killed'
   get 'ps2/del'
+  post 'ps2/import' => 'ps2#import'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
