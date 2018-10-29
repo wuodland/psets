@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'ps1/index'
   get 'ps1/news'
   get 'ps1/divide'
+  get '/ps2_db', :to => redirect('/ps2_db')
   root 'topics#index'
   get 'ps2/export_to_json', as:'export_to_json'
   get 'ps2/export_to_xml', as:'export_to_xml'
