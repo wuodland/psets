@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'ps3/index'
   root 'topics#index'
   get 'ps2/index'
