@@ -21,18 +21,29 @@
     <% if user_signed_in? %>
       Welcome <%= current_user.email %>! Not you?
      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-    <% else %>
+     <% elsif customer_signed_in? %>
+     <%if current_customer.ban==true %>
+    <%= render 'banned' %>
+    <%else%>
+     Welcome <%= current_customer.email %>! Not you?
+    <%= link_to "Sign out", destroy_customer_session_path, method: :delete %>
+   
+    <%end%>  
+     <% else %>
       <%= link_to "Sign up", new_user_registration_path %> or
-      <%= link_to "Sign in", new_user_session_path %>.
+      <%= link_to "Sign in", new_user_session_path %>
+      <%= link_to "Sign in(customer)", new_customer_session_path %>
     <% end %>
+    
 </div>
   
 
 
 
 
-
+<%if current_customer==nil||current_customer.ban!=true %>
   <%= yield %>
+  <%end%>
     <a href="https://validator.w3.org/nu/?doc=<%= request.original_url %>">Syntax Validation</a>
     
   </body>
