@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
-<h2>Adminstrator Control Panel</h2>
-<p>Source code @ /app/views/user/index.html.erb</p><br><br><br><br>
+<h2>User Management and Statistics</h2>
+<p>Source code @ /app/views/user/index.html.erb</p>
 <h3>List of Customers</h3>
 
 <table>
@@ -30,8 +30,9 @@
   </tbody>
 </table>
 <h2> User statistics </h2>
-<p> Total Number of users in the system = <%= Customer.count - 1%> </p>
+<p> Total Number of users in the system = <%= Customer.count%> </p>
 <%= link_to 'Add New Customer', new_customer_path %>
-<br><% end %>
+<br>
 <%else%>
 <%= render 'unauth' %>     
+<% end %>
