@@ -45,7 +45,7 @@
 <%if current_customer==nil||current_customer.ban!=true %>
   <%= yield %>
   <%end%>
-    <a href="https://validator.w3.org/nu/?doc=<%= request.original_url %>">Syntax Validation</a>
-    
+    <a href="https://validator.w3.org/nu/?doc=<%= request.original_url %>">Syntax Validation</a><br>
+    <%= link_to "Issue Tracker", "https://trello.com/b/V7d0Dsly/web18-17" %> <br>
   </body>
 </html>

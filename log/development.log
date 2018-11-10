@@ -13511,3 +13511,82 @@ Processing by CustomersController#new as HTML
 Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-11 03:59:41 +0700
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 508ms (Views: 492.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:00:26 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:00:53 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:26:14 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 113ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:26:42 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:26:51 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:28:40 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:28:51 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:29:29 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:32:47 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-11 04:33:41 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
