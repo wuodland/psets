@@ -30,8 +30,8 @@
    
     <%end%>  
      <% else %>
-      <%= link_to "Sign up", new_user_registration_path %> or
-      <%= link_to "Sign in", new_user_session_path %>
+      <%= link_to "Sign up(customer)", new_customer_path %> or
+      <%= link_to "Sign in(admin)", new_user_session_path %>
       <%= link_to "Sign in(customer)", new_customer_session_path %>
     <% end %>
     

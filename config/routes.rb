@@ -25,4 +25,5 @@ Rails.application.routes.draw do
   get   '/customers/:id/ban(.:format)'  => 'customers#ban', :as => 'ban'
   get   '/user/index', :as => 'user'
   get   '/customers/:id/unban(.:format)'  => 'customers#unban', :as => 'unban'
+  get 'customers/new'
 end

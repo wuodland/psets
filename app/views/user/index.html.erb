@@ -1,6 +1,8 @@
-<h1>User#index</h1>
-<p>Find me in app/views/user/index.html.erb</p>
-<h1>Customers</h1>
+<% if user_signed_in? %>
+
+<h2>Adminstrator Control Panel</h2>
+<p>Source code @ /app/views/user/index.html.erb</p><br><br><br><br>
+<h3>List of Customers</h3>
 
 <table>
   <thead>
@@ -20,14 +22,16 @@
         <td><%= customer.ban %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete User', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Ban', ban_path(customer) %></td>
         <td><%= link_to 'Unban', unban_path(customer) %></td>
         </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Customer', new_customer_path %>
+<h2> User statistics </h2>
+<p> Total Number of users in the system = <%= Customer.count - 1%> </p>
+<%= link_to 'Add New Customer', new_customer_path %>
+<br><% end %>
+<%else%>
+<%= render 'unauth' %>     
