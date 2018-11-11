@@ -27,8 +27,10 @@
     <%= render 'banned' %>
     <%else%>
      Welcome <%= current_customer.email %>! Not you?
-     <%= link_to "Customer HomePage", customers_path %><br>
+     <%= link_to "Customer HomePage", customers_path %>
+     <%= link_to 'Posts', posts_path %><br>
     <%= link_to "Sign out", destroy_customer_session_path, method: :delete %>
+    
     <%end%>  
      <% else %>
       <%= link_to "Sign up(customer)", new_customer_path %> or

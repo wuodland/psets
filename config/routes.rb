@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   get 'user/index'
   devise_for :customers
   resources :customers, except: :create
@@ -26,4 +27,5 @@ Rails.application.routes.draw do
   get   '/user/index', :as => 'user'
   get   '/customers/:id/unban(.:format)'  => 'customers#unban', :as => 'unban'
   get 'customers/new'
+  get 'topics/lol'
 end
