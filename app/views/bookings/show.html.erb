@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @booking.customer %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @booking.destination %>
+</p>
+
+<p>
+  <strong>Ride:</strong>
+  <%= @booking.ride %>
+</p>
+
+<p>
+  <strong>Driverphn:</strong>
+  <%= @booking.driverphn %>
+</p>
+
+<p>
+  <strong>Carno:</strong>
+  <%= @booking.carno %>
+</p>
+
+<p>
+  <strong>Cartype:</strong>
+  <%= @booking.cartype %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

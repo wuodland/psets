@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  destination: MyString
+  ride: one
+  driverphn: 
+  carno: MyString
+  cartype: MyString
+
+two:
+  customer: two
+  destination: MyString
+  ride: two
+  driverphn: 
+  carno: MyString
+  cartype: MyString

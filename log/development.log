@@ -18703,3 +18703,2587 @@ Processing by RidesController#index as HTML
 Completed 200 OK in 222ms (Views: 219.9ms | ActiveRecord: 1.2ms)
 
 
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:40:16 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (41.6ms)
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 876ms (Views: 855.1ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:43:57 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (386.0ms)
+Completed 500 Internal Server Error in 391ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x0000556dbb318d90>:0x00007f152a755f58>
+Did you mean?  fork):
+    28:         <td><%= ride.time %></td>
+    29:         <td><%= ride.complete %></td>
+    30:         <td><%= ride.seatsleft %></td>
+    31:         <%= form.submit %>
+    32:       </tr>
+    33:     <% end %>
+    34:   </tbody>
+  
+app/views/rides/index.html.erb:31:in `block in _app_views_rides_index_html_erb___1713389065534406963_69864441689140'
+app/views/rides/index.html.erb:21:in `_app_views_rides_index_html_erb___1713389065534406963_69864441689140'
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:44:13 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.9ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `submit' for #<Ride:0x00007f152b232ae8>):
+    28:         <td><%= ride.time %></td>
+    29:         <td><%= ride.complete %></td>
+    30:         <td><%= ride.seatsleft %></td>
+    31:         <%= ride.submit %>
+    32:       </tr>
+    33:     <% end %>
+    34:   </tbody>
+  
+app/views/rides/index.html.erb:31:in `block in _app_views_rides_index_html_erb___1713389065534406963_69864447415900'
+app/views/rides/index.html.erb:21:in `_app_views_rides_index_html_erb___1713389065534406963_69864447415900'
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:45:47 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.4ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 215ms (Views: 212.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:46:09 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.7ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 237ms (Views: 234.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:46:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 248ms (Views: 245.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 23:48:03 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 217ms (Views: 214.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 23:48:05 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:52
+  Rendered rides/_form.html.erb (21.2ms)
+  Rendered rides/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 214ms (Views: 212.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 23:48:27 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:51
+  Rendered rides/_form.html.erb (4.7ms)
+  Rendered rides/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 224ms (Views: 222.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 23:49:19 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:53
+  Rendered rides/_form.html.erb (4.6ms)
+  Rendered rides/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 219ms (Views: 217.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 23:49:21 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:53
+  Rendered rides/_form.html.erb (6.1ms)
+  Rendered rides/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 228ms (Views: 226.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 23:52:28 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 227ms (Views: 225.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:13:49 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateBookings (20181201165643)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (115.7ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "customer_id" bigint, "destination" character varying, "rides_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_dafb5f2e40"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+, CONSTRAINT "fk_rails_fbbd80a7bf"
+FOREIGN KEY ("rides_id")
+  REFERENCES "rides" ("id")
+)[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[35m (30.1ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_customer_id" ON "bookings"  ("customer_id")[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[35m (30.5ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_rides_id" ON "bookings"  ("rides_id")[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201165643"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (22.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:14:16 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (37.6ms)
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 4448ms (Views: 4423.5ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:15:06 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.1ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 196ms (Views: 192.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:15:53 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.7ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  Rendered bookings/index.html.erb within layouts/application (5.7ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 249ms (Views: 241.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/bookings/new" for 127.0.0.1 at 2018-12-02 00:15:56 +0700
+Processing by BookingsController#new as HTML
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/_form.html.erb (15.9ms)
+  Rendered bookings/new.html.erb within layouts/application (17.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 202ms (Views: 190.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:16:09 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 236ms (Views: 234.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:17:05 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 237ms (Views: 234.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:17:07 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.8ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 183ms (Views: 180.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/" for 127.0.0.1 at 2018-12-02 00:18:57 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 235ms (Views: 232.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:19:00 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 211ms (Views: 208.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:19:06 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  Rendered bookings/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 306ms (Views: 304.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:22:01 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/show.html.erb:46: syntax error, unexpected tIVAR, expecting '('
+...m.hidden_field :rides_id. @ride.id );@output_buffer.safe_app...
+...                          ^~~~~):
+  
+app/views/rides/show.html.erb:46: syntax error, unexpected tIVAR, expecting '('
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:23:28 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.9ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    41: </p>
+    42: 
+    43: <%= form_with(model: Booking.new, local: true) do |form| %>
+    44:     <%= form.hidden_field :customer_id, value: current_user.id %>
+    45:     <%= form.hidden_field :destination, value: @ride.destination %>
+    46:     <%= form.hidden_field :rides_id, value: @ride.id %>
+    47: 
+  
+app/views/rides/show.html.erb:44:in `block in _app_views_rides_show_html_erb__199754065394522737_70092429186140'
+app/views/rides/show.html.erb:43:in `_app_views_rides_show_html_erb__199754065394522737_70092429186140'
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:23:47 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 322ms (Views: 320.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/customers/sign_out" for 127.0.0.1 at 2018-12-02 00:23:53 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rMIQJ7x2LrAeqfYMSTo/PXEuCSGQoVXzeB6ReOfE7jo1bbbYTGQsVt66+a67MxtD4Ce1t9u6je/FCwJ27MEPaQ=="}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:23:53 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 236ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:23:56 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (5.1ms)
+  Rendered customers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 194ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:24:11 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KyYiIlWRgR244qyMctKp85JnHcYy+nzrLUC+8nc4/4qsbHu6fZQzFa2BbTqQlSOVxBAlfOqnIRYkp5onTps+ag==", "customer"=>{"name"=>"Raunak", "email"=>"bb@bb.com", "password"=>"[FILTERED]", "role"=>"Rider"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "bb@bb.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (0.8ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raunak"], ["role", "Rider"], ["created_at", "2018-12-01 17:24:11.403796"], ["updated_at", "2018-12-01 17:24:11.403796"], ["email", "bb@bb.com"], ["encrypted_password", "$2a$11$2XQ2l5nG.xJA0UOminxpcepBRz6DZ.4stzUnOAZK.8StmfeKadQNy"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/3
+Completed 302 Found in 188ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/customers/3" for 127.0.0.1 at 2018-12-02 00:24:11 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 220ms (Views: 215.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:24:16 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 227ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:24:25 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7zYYrWkaABqOHAoYwuaFR8DY1kW1FlLmrs3Pj86NM3556enufI4AfainpoGCXTvTTRCnhaj8CWSYa6yy9A+irQ==", "customer"=>{"email"=>"bb@bb.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "bb@bb.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:24:25 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 241ms (Views: 238.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:24:32 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (3.2ms)
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 256ms (Views: 252.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:24:34 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    41: </p>
+    42: 
+    43: <%= form_with(model: Booking.new, local: true) do |form| %>
+    44:     <%= form.hidden_field :customer_id, value: current_user.id %>
+    45:     <%= form.hidden_field :destination, value: @ride.destination %>
+    46:     <%= form.hidden_field :rides_id, value: @ride.id %>
+    47: 
+  
+app/views/rides/show.html.erb:44:in `block in _app_views_rides_show_html_erb__199754065394522737_70092426259540'
+app/views/rides/show.html.erb:43:in `_app_views_rides_show_html_erb__199754065394522737_70092426259540'
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:24:50 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (3.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 283ms (Views: 280.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:24:51 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHOudiZ0zhklywWuckJUwVIzrZU2gK2n2AIoG5RmwnON7F+h6aN+x6xVbIb2s/jegnlVI7bdxGJYFjdeUdQBCQ==", "booking"=>{"destination"=>"Mochit", "rides_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (uninitialized constant Booking::Rides):
+  
+app/controllers/bookings_controller.rb:30:in `block in create'
+app/controllers/bookings_controller.rb:29:in `create'
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:25:13 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHOudiZ0zhklywWuckJUwVIzrZU2gK2n2AIoG5RmwnON7F+h6aN+x6xVbIb2s/jegnlVI7bdxGJYFjdeUdQBCQ==", "booking"=>{"destination"=>"Mochit", "rides_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant Booking::Rides):
+  
+app/controllers/bookings_controller.rb:30:in `block in create'
+app/controllers/bookings_controller.rb:29:in `create'
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:25:31 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.8ms)
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 253ms (Views: 249.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:25:32 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.8ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 334ms (Views: 331.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:25:33 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oArf6bd2vjCwYrEwtI6A/+081qqBrRC+1FQJE0mEvP+RlS4+eKEO7jn82BgwfyzgPXYuHAHweXtUQBZWjDZ/hQ==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "rides_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.4ms)
+
+
+  
+NameError (uninitialized constant Booking::Rides):
+  
+app/controllers/bookings_controller.rb:30:in `block in create'
+app/controllers/bookings_controller.rb:29:in `create'
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:26:42 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (16.2ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 322ms (Views: 288.3ms | ActiveRecord: 14.2ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:26:43 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jXY/SDjnGBRrSi+ZoR3TED978qfPM+PWGJLIMCk2c0K86c6f9zCoyuLURrEl7H8P7zEKEU9uihOYhtd17ISwOA==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "rides_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/_form.html.erb (3.8ms)
+  Rendered bookings/new.html.erb within layouts/application (5.1ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 242ms (Views: 232.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:26:49 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rVYJ8mktpIWUjSlMs+Z2sLZImgTaxoYwcpJjoW7ntj6cyfglpvoUWx0TQGQ3F9qvZgJislqb7/Xyhnzkq1V1RA==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "rides_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  Rendering bookings/new.html.erb within layouts/application
+  Rendered bookings/_form.html.erb (1.9ms)
+  Rendered bookings/new.html.erb within layouts/application (2.8ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 248ms (Views: 241.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:27:22 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  Rendered bookings/index.html.erb within layouts/application (4.7ms)
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 252ms (Views: 242.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:27:23 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  Rendered bookings/index.html.erb within layouts/application (2.7ms)
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 244ms (Views: 242.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:27:24 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  Rendered bookings/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 252ms (Views: 250.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:27:27 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (11.4ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 309ms (Views: 282.0ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:27:28 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxu31oUVLVLrlzIeSxNG7ivYOXIsCcSiWvijX9BQ/4eOhEYBSsKdjGIJWzbP4urx+5LBxKxUrWfa7LwaFeI8/Q==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "ride_id"=>"1"}, "commit"=>"Create Booking"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'ride_id' for Booking.):
+  
+app/controllers/bookings_controller.rb:24:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:28:41 +0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vxu31oUVLVLrlzIeSxNG7ivYOXIsCcSiWvijX9BQ/4eOhEYBSsKdjGIJWzbP4urx+5LBxKxUrWfa7LwaFeI8/Q==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "ride_id"=>"1"}, "commit"=>"Create Booking"}
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 6.9ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'ride_id' for Booking.):
+  
+app/controllers/bookings_controller.rb:24:in `create'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (5010.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_development"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (324.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_development"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (332.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_test"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (791.1ms)[0m  [1m[35mCREATE DATABASE "psets_development" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (817.1ms)[0m  [1m[35mCREATE DATABASE "psets_test" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (133.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (110.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuotations (20181017102820)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (106.3ms)[0m  [1m[35mCREATE TABLE "quotations" ("id" bigserial primary key, "author_name" character varying, "category" character varying, "quote" text, "created_at" timestamp NOT NULL, "uploaded_at" timestamp, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181017102820_create_quotations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181017102820"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20181105160121)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (91.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:5
+  [1m[35m (43.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:39
+  [1m[35m (40.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181105160121"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (48.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCustomers (20181106161211)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (84.5ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "role" character varying, "ban" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181106161211_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161211"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (22.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddDeviseToCustomers (20181106161245)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (88.5ms)[0m  [1m[35mALTER TABLE "customers" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:7
+  [1m[35m (100.1ms)[0m  [1m[35mALTER TABLE "customers" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:15
+  [1m[35m (38.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:40
+  [1m[35m (42.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_reset_password_token" ON "customers"  ("reset_password_token")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161245"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePosts (20181111173539)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (89.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "content" text, "customer_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_294f894e6c"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[35m (38.9ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_customer_id" ON "posts"  ("customer_id")[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181111173539"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateRides (20181201155840)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (89.7ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "carno" character varying, "cartype" character varying, "driverphn" bigint, "destination" character varying, "seats" integer, "time" character varying, "complete" boolean, "customer_id" bigint, "seatsleft" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE  INDEX  "index_rides_on_customer_id" ON "rides"  ("customer_id")[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201155840"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateBookings (20181201165643)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (69.4ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "customer_id" bigint, "destination" character varying, "ride_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_dafb5f2e40"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+, CONSTRAINT "fk_rails_fca494fe2a"
+FOREIGN KEY ("ride_id")
+  REFERENCES "rides" ("id")
+)[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[35m (29.9ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_customer_id" ON "bookings"  ("customer_id")[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[35m (49.6ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_ride_id" ON "bookings"  ("ride_id")[0m
+  ↳ db/migrate/20181201165643_create_bookings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201165643"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-01 17:29:37.886833"], ["updated_at", "2018-12-01 17:29:37.886833"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:29:47 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+Completed 404 Not Found in 23ms (ActiveRecord: 7.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=1):
+  
+app/controllers/rides_controller.rb:67:in `set_ride'
+Started GET "/rides/" for 127.0.0.1 at 2018-12-02 00:29:50 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCustomer Load (1.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 898ms (Views: 890.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-02 00:29:53 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (18.4ms)
+  Rendered rides/new.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    47:   </div>
+    48: 
+    49:   <div class="field">
+    50:   <%= form.hidden_field :customer_id, value: current_customer.id %>
+    51:   </div>
+    52: 
+    53:   <div class="actions">
+  
+app/views/rides/_form.html.erb:50:in `block in _app_views_rides__form_html_erb___2289425779661764387_70322256965500'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb___2289425779661764387_70322256965500'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___4454140114473634587_70322256861760'
+Started GET "/rides/" for 127.0.0.1 at 2018-12-02 00:29:54 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 266ms (Views: 264.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:29:57 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 192ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:30:01 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W8xqUDfDgiYjovRaHrxf7ydocfK0o5k0sp7eCWS32WdS4mUWRqy27/didFzhW4/6GNYogsgKe65LkVpvg1qb3Q==", "customer"=>{"email"=>"r@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W8xqUDfDgiYjovRaHrxf7ydocfK0o5k0sp7eCWS32WdS4mUWRqy27/didFzhW4/6GNYogsgKe65LkVpvg1qb3Q==", "customer"=>{"email"=>"r@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 388ms (Views: 211.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:30:05 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (3.3ms)
+  Rendered customers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 197ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:30:15 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FiS8WtkE7SScbjyvD+U88ew0s6vLXL2sXdsEsnkwiSodivf9U8d0OpP+ty+FVO+44GRft+XxQzN9lbmvKl+Q7A==", "customer"=>{"name"=>"Raunak", "email"=>"r@m.com", "password"=>"[FILTERED]", "role"=>"Driver"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (1.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raunak"], ["role", "Driver"], ["created_at", "2018-12-01 17:30:15.531697"], ["updated_at", "2018-12-01 17:30:15.531697"], ["email", "r@m.com"], ["encrypted_password", "$2a$11$hys8tlrHOzEcUbjBgVinveGg0CDDznW4AM8mJHKNb8iP3m4hVKySe"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 194ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2018-12-02 00:30:15 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 218ms (Views: 210.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:30:19 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 185ms (Views: 183.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:30:26 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SDIG77wsl7RZ0hBTHKyEy7s5gDByCpe9wupOwuJtxxRBHAmpzUOjfY0SkFXjS1TehIfZQA6jdSc75cqkBYCFrg==", "customer"=>{"email"=>"r@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 166ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:30:27 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 220ms (Views: 218.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:30:31 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 232ms (Views: 229.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ride" for 127.0.0.1 at 2018-12-02 00:30:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/ride"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:30:36 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (3.2ms)
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 237ms (Views: 234.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-02 00:30:38 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:50
+  Rendered rides/_form.html.erb (10.6ms)
+  Rendered rides/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 224ms (Views: 221.1ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateBookings (20181201173133)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "customer_id" bigint, "destination" character varying, "ride_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_dafb5f2e40"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+, CONSTRAINT "fk_rails_fca494fe2a"
+FOREIGN KEY ("ride_id")
+  REFERENCES "rides" ("id")
+)[0m
+  ↳ db/migrate/20181201173133_create_bookings.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (317.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_development"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (330.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_test"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (826.3ms)[0m  [1m[35mCREATE DATABASE "psets_development" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (795.7ms)[0m  [1m[35mCREATE DATABASE "psets_test" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (113.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (119.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuotations (20181017102820)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (81.8ms)[0m  [1m[35mCREATE TABLE "quotations" ("id" bigserial primary key, "author_name" character varying, "category" character varying, "quote" text, "created_at" timestamp NOT NULL, "uploaded_at" timestamp, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181017102820_create_quotations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181017102820"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20181105160121)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (80.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:5
+  [1m[35m (53.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:39
+  [1m[35m (31.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181105160121"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCustomers (20181106161211)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (73.3ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "role" character varying, "ban" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181106161211_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161211"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddDeviseToCustomers (20181106161245)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (85.5ms)[0m  [1m[35mALTER TABLE "customers" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:7
+  [1m[35m (77.9ms)[0m  [1m[35mALTER TABLE "customers" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "customers" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:15
+  [1m[35m (40.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:40
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_reset_password_token" ON "customers"  ("reset_password_token")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161245"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (35.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePosts (20181111173539)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (76.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "content" text, "customer_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_294f894e6c"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[35m (41.9ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_customer_id" ON "posts"  ("customer_id")[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181111173539"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (21.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateRides (20181201155840)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (97.7ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "carno" character varying, "cartype" character varying, "driverphn" bigint, "destination" character varying, "seats" integer, "time" character varying, "complete" boolean, "customer_id" bigint, "seatsleft" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[35m (43.1ms)[0m  [1m[35mCREATE  INDEX  "index_rides_on_customer_id" ON "rides"  ("customer_id")[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201155840"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateBookings (20181201173133)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (89.4ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "customer_id" bigint, "destination" character varying, "ride_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_dafb5f2e40"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+, CONSTRAINT "fk_rails_fca494fe2a"
+FOREIGN KEY ("ride_id")
+  REFERENCES "rides" ("id")
+)[0m
+  ↳ db/migrate/20181201173133_create_bookings.rb:3
+  [1m[35m (41.8ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_customer_id" ON "bookings"  ("customer_id")[0m
+  ↳ db/migrate/20181201173133_create_bookings.rb:3
+  [1m[35m (53.9ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_ride_id" ON "bookings"  ("ride_id")[0m
+  ↳ db/migrate/20181201173133_create_bookings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201173133"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-01 17:31:57.515047"], ["updated_at", "2018-12-01 17:31:57.515047"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:32:14 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCustomer Load (1.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 893ms (Views: 875.0ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:32:17 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (10.9ms)
+  Rendered customers/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 271ms (Views: 255.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:32:24 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUIraBwmc1P52+Et1a6mnPJkbIysSb1/RfNDD9RuEFaHs8iA4qzkMTyhvDcARhtuZCICg8RZt+tkT2UyySlqzQ==", "customer"=>{"name"=>"Raunak", "email"=>"r@m.com", "password"=>"[FILTERED]", "role"=>"Rider"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raunak"], ["role", "Rider"], ["created_at", "2018-12-01 17:32:25.146083"], ["updated_at", "2018-12-01 17:32:25.146083"], ["email", "r@m.com"], ["encrypted_password", "$2a$11$i6qww/p2rO8u/lTD28ik4eSwCoifBSq1SsS61b9uZPS2L081NcwDa"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 181ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2018-12-02 00:32:25 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 214ms (Views: 210.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:32:27 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (3.0ms)
+  Rendered customers/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:32:47 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3zKxIPvmuKarp2pTuVlOi8WcQnT2lGpg5U17mXfSoa5jSksfWUNgF/UwLObDdjIuVAfBrvKWz2iKRPTeJgwHQ==", "customer"=>{"name"=>"anubind", "email"=>"a@a.com", "password"=>"[FILTERED]", "role"=>"Driver"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "a@a.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (0.3ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "anubind"], ["role", "Driver"], ["created_at", "2018-12-01 17:32:48.160657"], ["updated_at", "2018-12-01 17:32:48.160657"], ["email", "a@a.com"], ["encrypted_password", "$2a$11$bd71DpWWPHDIkgu44GPzDOW0AlaHtGk5dxC60f0vC6oa6DxZOM5AG"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/2
+Completed 302 Found in 177ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/customers/2" for 127.0.0.1 at 2018-12-02 00:32:48 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 219ms (Views: 216.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:32:51 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 196ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:32:56 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6xhr4kweJmFD3YPpgOp3UlIly1zMpl5y8aOGVy/9S8D40dm/SA/GknaYaiZVJFGP07FtxqgJNFwUAY/NBIB8Sg==", "customer"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "a@a.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 167ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:32:56 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 232ms (Views: 230.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:33:00 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.9ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (7.6ms)
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 273ms (Views: 264.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-02 00:33:02 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:50
+  Rendered rides/_form.html.erb (7.0ms)
+  Rendered rides/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 222ms (Views: 200.2ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-02 00:33:09 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9/hr4Tg3MklWvUj6g9C/hEEKjM98/WcFZBKyWFiyjGX3SFVMm6ax1KxnR4aqfwf0FEJkgTZBoV/AVlogN5jPBw==", "ride"=>{"carno"=>"1234", "cartype"=>"Sedan", "driverphn"=>"1234", "destination"=>"Mochit", "seats"=>"1", "time"=>"11", "complete"=>"0", "customer_id"=>"2"}, "commit"=>"Create Ride"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (1.8ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["carno", "1234"], ["cartype", "Sedan"], ["driverphn", 1234], ["destination", "Mochit"], ["seats", 1], ["time", "11"], ["complete", false], ["customer_id", 2], ["created_at", "2018-12-01 17:33:09.856675"], ["updated_at", "2018-12-01 17:33:09.856675"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/1
+Completed 302 Found in 50ms (ActiveRecord: 38.1ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:33:09 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (14.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 233ms (Views: 224.5ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/customers/sign_out" for 127.0.0.1 at 2018-12-02 00:33:15 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2Gunh0gtz0Q5ypPr8Ir6DnIbtzUdQzLnm/PqnuIF5LeffSt88TMpv2AqNULD0YzgkNsYZVKQLgaBv9XBFnD5dw=="}
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:33:15 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 227ms (Views: 226.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:33:18 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 207ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:33:24 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B1eRCRIUAJeigM4ix3ZZQVa/lkUgdAKvves0NRPRb7BHtdu82CB9C6f1M+50oH+Y0Jr1nmOmTIYuw9U9ieimkQ==", "customer"=>{"email"=>"r@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 166ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:33:25 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 327ms (Views: 325.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:33:30 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 259ms (Views: 257.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:33:32 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 206ms (Views: 203.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:33:36 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AO4uSudn/I7eW01DkK29YNm5+KgIQ4ezQxUfyYLHk6KHb8Zes3EzuxYxxfv4zIHkOkNqqUxDXKbbg+AZ9PRyjA==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "ride_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (2.4ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["customer_id", 1], ["destination", "Mochit"], ["ride_id", 1], ["created_at", "2018-12-01 17:33:36.047568"], ["updated_at", "2018-12-01 17:33:36.047568"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (35.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/1
+Completed 302 Found in 51ms (ActiveRecord: 38.8ms)
+
+
+Started GET "/bookings/1" for 127.0.0.1 at 2018-12-02 00:33:36 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (4.6ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 229ms (Views: 223.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:33:45 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (5.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 192ms (Views: 189.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings/1" for 127.0.0.1 at 2018-12-02 00:33:52 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (6.4ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 263ms (Views: 257.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:36:34 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCustomer Load (1.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 234ms (Views: 231.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:36:36 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 214ms (Views: 210.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:36:38 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zAxd9PKM5DPwovkMLQOKbdBZOGdEc23VxA1LUCGnB15LjbXgpporBjjIcbRFYrbpM6OqZgBztsBcm7SAV5TmcA==", "booking"=>{"customer_id"=>"1", "destination"=>"Mochit", "ride_id"=>"1"}, "commit"=>"Create Booking"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (0.7ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["customer_id", 1], ["destination", "Mochit"], ["ride_id", 1], ["created_at", "2018-12-01 17:36:38.333470"], ["updated_at", "2018-12-01 17:36:38.333470"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/2
+Completed 302 Found in 19ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/bookings/2" for 127.0.0.1 at 2018-12-02 00:36:38 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (4.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 222ms (Views: 217.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:36:41 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (9.1ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 212ms (Views: 209.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/1" for 127.0.0.1 at 2018-12-02 00:37:42 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `driverphn' for nil:NilClass):
+    17: 
+    18: <p>
+    19:   <strong>Driverphn:</strong>
+    20:   <%= @ride.driverphn %>
+    21: </p>
+    22: 
+    23: 
+  
+app/views/bookings/show.html.erb:20:in `_app_views_bookings_show_html_erb__2375676823120110495_69888229745240'
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:19 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (5.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 345ms (Views: 342.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:21 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (8.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 258ms (Views: 255.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:26 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (9.8ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 302ms (Views: 298.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:32 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (5.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 223ms (Views: 220.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:34 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (8.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 231ms (Views: 228.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:35 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (9.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 229ms (Views: 226.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:35 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (5.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 236ms (Views: 234.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:37 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (7.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 236ms (Views: 233.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:38 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (8.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 259ms (Views: 255.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:38 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (6.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 231ms (Views: 228.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:39 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (7.6ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 262ms (Views: 259.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:40 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (6.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 323ms (Views: 320.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:40 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (7.8ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 236ms (Views: 233.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:38:41 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:16
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:18
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:20
+  Rendered bookings/index.html.erb within layouts/application (6.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 236ms (Views: 234.1ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (330.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_development"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (327.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_test"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (791.7ms)[0m  [1m[35mCREATE DATABASE "psets_development" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (806.5ms)[0m  [1m[35mCREATE DATABASE "psets_test" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (108.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (109.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuotations (20181017102820)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (86.1ms)[0m  [1m[35mCREATE TABLE "quotations" ("id" bigserial primary key, "author_name" character varying, "category" character varying, "quote" text, "created_at" timestamp NOT NULL, "uploaded_at" timestamp, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181017102820_create_quotations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181017102820"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20181105160121)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (101.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:5
+  [1m[35m (43.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:39
+  [1m[35m (42.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181105160121"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCustomers (20181106161211)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (98.2ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "role" character varying, "ban" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181106161211_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161211"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (280.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddDeviseToCustomers (20181106161245)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (133.2ms)[0m  [1m[35mALTER TABLE "customers" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:7
+  [1m[35m (74.1ms)[0m  [1m[35mALTER TABLE "customers" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:15
+  [1m[35m (29.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:40
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_reset_password_token" ON "customers"  ("reset_password_token")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161245"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePosts (20181111173539)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (119.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "content" text, "customer_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_294f894e6c"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[35m (64.5ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_customer_id" ON "posts"  ("customer_id")[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181111173539"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateRides (20181201155840)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (89.1ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "carno" character varying, "cartype" character varying, "driverphn" bigint, "destination" character varying, "seats" integer, "time" character varying, "complete" boolean, "customer_id" bigint, "seatsleft" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[35m (59.4ms)[0m  [1m[35mCREATE  INDEX  "index_rides_on_customer_id" ON "rides"  ("customer_id")[0m
+  ↳ db/migrate/20181201155840_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201155840"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateBookings (20181201174434)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (68.8ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" bigserial primary key, "customer_id" bigint, "destination" character varying, "ride_id" bigint, "driverphn" bigint, "carno" character varying, "cartype" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_dafb5f2e40"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+, CONSTRAINT "fk_rails_fca494fe2a"
+FOREIGN KEY ("ride_id")
+  REFERENCES "rides" ("id")
+)[0m
+  ↳ db/migrate/20181201174434_create_bookings.rb:3
+  [1m[35m (40.4ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_customer_id" ON "bookings"  ("customer_id")[0m
+  ↳ db/migrate/20181201174434_create_bookings.rb:3
+  [1m[35m (40.7ms)[0m  [1m[35mCREATE  INDEX  "index_bookings_on_ride_id" ON "bookings"  ("ride_id")[0m
+  ↳ db/migrate/20181201174434_create_bookings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201174434"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (15.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-01 17:44:49.585514"], ["updated_at", "2018-12-01 17:44:49.585514"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (22.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:46:22 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.8ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  Rendered bookings/index.html.erb within layouts/application (9.6ms)
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 837ms (Views: 817.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:46:26 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (7.5ms)
+  Rendered customers/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 259ms (Views: 243.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:46:37 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gZsrJOKl54M34CEqeDkmq5YvfVrfq03cWWTxSc4MFo2voyS0VfMAu3h9yWiCZv7KsudrGxJ6+6YcpkLR+N9l8g==", "customer"=>{"name"=>"Raunak", "email"=>"r@m.com", "password"=>"[FILTERED]", "role"=>"Driver"}, "commit"=>"Create Customer"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (0.5ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Raunak"], ["role", "Driver"], ["created_at", "2018-12-01 17:46:37.446917"], ["updated_at", "2018-12-01 17:46:37.446917"], ["email", "r@m.com"], ["encrypted_password", "$2a$11$sT7Pkz8i8QbqgNq1ToJZXOpCSJZBDJXVVxQEbcQbYDUzx5ixFHhbu"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 184ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2018-12-02 00:46:37 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 201ms (Views: 197.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2018-12-02 00:46:38 +0700
+Processing by CustomersController#new as HTML
+  Rendering customers/new.html.erb within layouts/application
+  Rendered customers/_form.html.erb (3.0ms)
+  Rendered customers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 198ms (Views: 197.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_customer" for 127.0.0.1 at 2018-12-02 00:46:52 +0700
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oBjS/A4JI/ad5mmBWfsjTRRNGAWj60OUFBxPf7HGyouOIN1suV/EztJ7gcOjpPssMIUORG469e5R3vznhxW59A==", "customer"=>{"name"=>"anubind", "email"=>"a@a.com", "password"=>"[FILTERED]", "role"=>"Rider"}, "commit"=>"Create Customer"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "customers" WHERE "customers"."email" = $1 LIMIT $2[0m  [["email", "a@a.com"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[36mCustomer Create (0.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "role", "created_at", "updated_at", "email", "encrypted_password") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "anubind"], ["role", "Rider"], ["created_at", "2018-12-01 17:46:52.266591"], ["updated_at", "2018-12-01 17:46:52.266591"], ["email", "a@a.com"], ["encrypted_password", "$2a$11$aH8UqvFxCis8sgBgUC70oeHW00nIwKJne5ZB1Dli.CXzjT4E7Apz6"]]
+  ↳ app/controllers/customers_controller.rb:58
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:58
+Redirected to http://localhost:3000/customers/2
+Completed 302 Found in 184ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/customers/2" for 127.0.0.1 at 2018-12-02 00:46:52 +0700
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:95
+  Rendering customers/show.html.erb within layouts/application
+  Rendered customers/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 240ms (Views: 237.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:46:53 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 202ms (Views: 198.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:46:58 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ijTtV6nFLiKRrHB3QqYLu0K8Er4K+2s5ACD1izzQ+MVRx4VQpyLWOv+xnxtVPYE3v5Aft3fzP57eN5XiA79hyw==", "customer"=>{"email"=>"r@m.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "r@m.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 169ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:46:58 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 208ms (Views: 206.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:47:02 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (1.0ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (10.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 266ms (Views: 256.5ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-02 00:47:03 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/_form.html.erb:50
+  Rendered rides/_form.html.erb (9.9ms)
+  Rendered rides/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 235ms (Views: 219.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-02 00:47:10 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T0Mpu/vWoz7N6Uru2xDTmqbYjyibUd3swQCX1KKwcWqbYt8fJbm3Nvk1oAi1EqOU1ei2lK8pIBW0PcW0kRt9cA==", "ride"=>{"carno"=>"1", "cartype"=>"Sedan", "driverphn"=>"1", "destination"=>"Mochit", "seats"=>"1", "time"=>"1", "complete"=>"0", "customer_id"=>"1"}, "commit"=>"Create Ride"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (1.3ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["carno", "1"], ["cartype", "Sedan"], ["driverphn", 1], ["destination", "Mochit"], ["seats", 1], ["time", "1"], ["complete", false], ["customer_id", 1], ["created_at", "2018-12-01 17:47:10.167434"], ["updated_at", "2018-12-01 17:47:10.167434"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (46.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/1
+Completed 302 Found in 62ms (ActiveRecord: 48.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:47:10 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 237ms (Views: 231.7ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/customers/sign_out" for 127.0.0.1 at 2018-12-02 00:47:18 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5ZlQ/961HSZyaVbwmWm9EttD4fTaeVMBia3tRRMbWTcWbfjzZuxhA9kpfxIl13r5Qpn8fb+Qwa8mfowRFpf8AA=="}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:47:18 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 264ms (Views: 262.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:47:20 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 204ms (Views: 202.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/sign_in" for 127.0.0.1 at 2018-12-02 00:47:25 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6fAbhem7/7ZROdtJWfS79olE4PhQp65+TW2ES3kkLbV2Sx4qJ+oVr2z2Mh/f8rVz4QKUMhGYtHQPdfeZ7UTV0Q==", "customer"=>{"email"=>"a@a.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."email" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["email", "a@a.com"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 168ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-02 00:47:25 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 345ms (Views: 343.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:47:29 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 258ms (Views: 256.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:47:32 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 199ms (Views: 195.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:47:33 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u4Cc8wKJkqR3NyqCObPnuHLq7FpZo0NJBfX8kUiVs1Y+xYmwqWNj2mZsqlQMNru20XCrnaRWuuIU1S3XlzqPAQ==", "booking"=>{"customer_id"=>"2", "destination"=>"Mochit", "ride_id"=>"1", "ride_carno"=>"1", "ride_driverphn"=>"1", "ride_cartype"=>"Sedan"}, "commit"=>"Create Booking"}
+Unpermitted parameters: :ride_carno, :ride_driverphn, :ride_cartype
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (1.4ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["customer_id", 2], ["destination", "Mochit"], ["ride_id", 1], ["created_at", "2018-12-01 17:47:33.593571"], ["updated_at", "2018-12-01 17:47:33.593571"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/1
+Completed 302 Found in 37ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/bookings/1" for 127.0.0.1 at 2018-12-02 00:47:33 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (3.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 214ms (Views: 209.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:47:42 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:21
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:23
+  Rendered bookings/index.html.erb within layouts/application (5.3ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 198ms (Views: 194.8ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/bookings/1" for 127.0.0.1 at 2018-12-02 00:47:45 +0700
+Processing by BookingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zO0mEwjDOjAEK1CQCZBMAuZsqLT8+eop/ed09hpwzDnrokmhSGYsy69hFRqQ/xH0H6sYMvma58a6JWZ5zxHZ0g==", "id"=>"1"}
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:57
+  [1m[36mBooking Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bookings" WHERE "bookings"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/bookings_controller.rb:57
+  [1m[35m (60.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:57
+Redirected to http://localhost:3000/bookings
+Completed 302 Found in 85ms (ActiveRecord: 62.3ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:47:46 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  Rendered bookings/index.html.erb within layouts/application (4.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 230ms (Views: 228.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/bookings" for 127.0.0.1 at 2018-12-02 00:48:09 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  Rendered bookings/index.html.erb within layouts/application (3.2ms)
+  [1m[36mCustomer Load (1.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 240ms (Views: 236.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:48:12 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 255ms (Views: 253.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:48:14 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `destination' for nil:NilClass):
+    42: 
+    43: <%= form_with(model: Booking.new, local: true) do |form| %>
+    44:     <%= form.hidden_field :customer_id, value: current_customer.id %>
+    45:     <%= form.hidden_field :destination, value: @rides.destination %>
+    46:     <%= form.hidden_field :ride_id, value: @ride.id %>
+    47:     <%= form.hidden_field :ride_carno, value: @rides.carno %>
+    48:     <%= form.hidden_field :ride_driverphn, value: @ride.driverphn %>
+  
+app/views/rides/show.html.erb:45:in `block in _app_views_rides_show_html_erb__3443768449666927294_70322765826980'
+app/views/rides/show.html.erb:43:in `_app_views_rides_show_html_erb__3443768449666927294_70322765826980'
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:48:33 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 237ms (Views: 234.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:48:38 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVxvuiXos6LDQ/Pe5x7jXitGvt2bSPGEhLft79vV7ISWEwAIZU2lWWgJtlR+cb6o0oEOW54r/GvDdf9gDrT5bw==", "booking"=>{"customer_id"=>"2", "destination"=>"Mochit", "ride_id"=>"1", "ride_carno"=>"1", "ride_driverphn"=>"1", "ride_cartype"=>"Sedan"}, "commit"=>"Create Booking"}
+Unpermitted parameters: :ride_carno, :ride_driverphn, :ride_cartype
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (0.6ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["customer_id", 2], ["destination", "Mochit"], ["ride_id", 1], ["created_at", "2018-12-01 17:48:38.314379"], ["updated_at", "2018-12-01 17:48:38.314379"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (21.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/2
+Completed 302 Found in 30ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/bookings/2" for 127.0.0.1 at 2018-12-02 00:48:38 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (4.7ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 225ms (Views: 220.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:49:03 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 283ms (Views: 280.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:49:05 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4vZ58EF/U9TJkNpNJde2+4znHBT5g4KCKQcWZq5bT0sxLZVgaDrtPhsBuOt+AMtF/Qs9laFA+VPZg7WT9h41g==", "booking"=>{"customer_id"=>"2", "destination"=>"Mochit", "ride_id"=>"1", "ride_carno"=>"1", "ride_driverphn"=>"1", "ride_cartype"=>"Sedan"}, "commit"=>"Create Booking"}
+Unpermitted parameters: :ride_carno, :ride_driverphn, :ride_cartype
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (0.7ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["customer_id", 2], ["destination", "Mochit"], ["ride_id", 1], ["created_at", "2018-12-01 17:49:05.049516"], ["updated_at", "2018-12-01 17:49:05.049516"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/3
+Completed 302 Found in 62ms (ActiveRecord: 54.5ms)
+
+
+Started GET "/bookings/3" for 127.0.0.1 at 2018-12-02 00:49:05 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (4.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 322ms (Views: 318.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:49:12 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.4ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:21
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:23
+  [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:21
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:23
+  Rendered bookings/index.html.erb within layouts/application (7.5ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 268ms (Views: 265.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/2" for 127.0.0.1 at 2018-12-02 00:49:16 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (4.7ms)
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 204ms (Views: 200.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/bookings/" for 127.0.0.1 at 2018-12-02 00:49:45 +0700
+Processing by BookingsController#index as HTML
+  Rendering bookings/index.html.erb within layouts/application
+  [1m[36mBooking Load (0.3ms)[0m  [1m[34mSELECT "bookings".* FROM "bookings"[0m
+  ↳ app/views/bookings/index.html.erb:19
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:21
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:23
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:21
+  [1m[36mCACHE Ride Load (0.0ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/index.html.erb:23
+  Rendered bookings/index.html.erb within layouts/application (9.9ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 253ms (Views: 250.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-02 00:49:50 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:21
+  Rendered rides/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 251ms (Views: 248.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-02 00:49:52 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/rides/show.html.erb:44
+  Rendered rides/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 215ms (Views: 211.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/bookings" for 127.0.0.1 at 2018-12-02 00:49:54 +0700
+Processing by BookingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XoEUhDXMWYxOf4EuNdxMhBFMEp7U18fIe1B2nvimbmTbxAHHniao8l8kAfgAWRCKstZVWSkiPmNqcKfYJwlSMw==", "booking"=>{"customer_id"=>"2", "destination"=>"Mochit", "ride_id"=>"1", "carno"=>"1", "driverphn"=>"1", "cartype"=>"Sedan"}, "commit"=>"Create Booking"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[36mBooking Create (0.7ms)[0m  [1m[32mINSERT INTO "bookings" ("customer_id", "destination", "ride_id", "driverphn", "carno", "cartype", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["customer_id", 2], ["destination", "Mochit"], ["ride_id", 1], ["driverphn", 1], ["carno", "1"], ["cartype", "Sedan"], ["created_at", "2018-12-01 17:49:54.387510"], ["updated_at", "2018-12-01 17:49:54.387510"]]
+  ↳ app/controllers/bookings_controller.rb:30
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bookings_controller.rb:30
+Redirected to http://localhost:3000/bookings/4
+Completed 302 Found in 35ms (ActiveRecord: 27.2ms)
+
+
+Started GET "/bookings/4" for 127.0.0.1 at 2018-12-02 00:49:54 +0700
+Processing by BookingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBooking Load (0.5ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/bookings_controller.rb:67
+  Rendering bookings/show.html.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:5
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/bookings/show.html.erb:15
+  Rendered bookings/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 ORDER BY "customers"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 224ms (Views: 220.5ms | ActiveRecord: 1.4ms)
+
+

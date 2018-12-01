@@ -40,5 +40,18 @@
   <%= @ride.seatsleft %>
 </p>
 
+<%= form_with(model: Booking.new, local: true) do |form| %>
+    <%= form.hidden_field :customer_id, value: current_customer.id %>
+    <%= form.hidden_field :destination, value: @ride.destination %>
+    <%= form.hidden_field :ride_id, value: @ride.id %>
+    <%= form.hidden_field :carno, value: @ride.carno %>
+    <%= form.hidden_field :driverphn, value: @ride.driverphn %>
+    <%= form.hidden_field :cartype, value: @ride.cartype %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
 <%= link_to 'Edit', edit_ride_path(@ride) %> |
 <%= link_to 'Back', rides_path %>
