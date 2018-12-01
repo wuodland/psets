@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :carno %>
+    <%= form.label :"Registration number of car" %>
     <%= form.text_field :carno %>
   </div>
 
   <div class="field">
-    <%= form.label :cartype %>
+    <%= form.label :"Type of vehicle" %>
     <%= form.select :cartype, options_for_select([["Sedan","Sedan"],["SUV","SUV"],["Coupé","Coupé"],["Van","Van"],["Other","Other"]],"Sedan")%>
 
   </div>
 
   <div class="field">
-    <%= form.label :driverphn %>
+    <%= form.label :"Driver Contact number" %>
     <%= form.text_field :driverphn %>
   </div>
 
   <div class="field">
-    <%= form.label :destination %>
+    <%= form.label :"Destination" %>
     <%= form.select :destination, options_for_select([["Mochit","Mochit"],["Khao-San Road","Khao-San Road"],["Suvarnabhumi Airport","Suvarnabhumi Airport"],["Victoria Monument","Victoria Monument"],["Asiatique","Asiatique"]],"Mochit")%>
 
   </div>
@@ -39,14 +39,14 @@
   </div>
 
   <div class="field">
-    <%= form.label :time  %>
-    <%= form.text_field :time %>
+    <%= form.label :"Time"  %>
+    <%= form.text_field :time, placeholder: "(HH:MM)" %>
 
     
   </div>
 
   <div class="field">
-    <%= form.label :complete %>
+    <%= form.label :"Ride complete" %>
     <%= form.check_box :complete %>
   </div>
 
