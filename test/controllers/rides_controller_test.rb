@@ -17,7 +17,7 @@ class RidesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create ride" do
     assert_difference('Ride.count') do
-      post rides_url, params: { ride: { carno: @ride.carno, cartype: @ride.cartype, complete: @ride.complete, destination: @ride.destination, driverphn: @ride.driverphn, seats: @ride.seats, time: @ride.time } }
+      post rides_url, params: { ride: { carno: @ride.carno, cartype: @ride.cartype, complete: @ride.complete, customer_id: @ride.customer_id, destination: @ride.destination, driverphn: @ride.driverphn, seats: @ride.seats, seatsleft: @ride.seatsleft, time: @ride.time } }
     end
 
     assert_redirected_to ride_url(Ride.last)
@@ -34,7 +34,7 @@ class RidesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update ride" do
-    patch ride_url(@ride), params: { ride: { carno: @ride.carno, cartype: @ride.cartype, complete: @ride.complete, destination: @ride.destination, driverphn: @ride.driverphn, seats: @ride.seats, time: @ride.time } }
+    patch ride_url(@ride), params: { ride: { carno: @ride.carno, cartype: @ride.cartype, complete: @ride.complete, customer_id: @ride.customer_id, destination: @ride.destination, driverphn: @ride.driverphn, seats: @ride.seats, seatsleft: @ride.seatsleft, time: @ride.time } }
     assert_redirected_to ride_url(@ride)
   end
 

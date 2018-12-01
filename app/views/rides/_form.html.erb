@@ -12,18 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :"Registration number of car" %>
+    <%= form.label :carno %>
     <%= form.text_field :carno %>
   </div>
 
   <div class="field">
-    <%= form.label :"Type of vehicle" %>
-    <%= form.select :cartype, options_for_select([["Sedan","Sedan"],["SUV","SUV"],["Coupé","Coupé"],["Van","Van"],["Other","Other"]],"Sedan")%>
+  <%= form.label :"Type of vehicle" %>
+  <%= form.select :cartype, options_for_select([["Sedan","Sedan"],["SUV","SUV"],["Coupé","Coupé"],["Van","Van"],["Other","Other"]],"Sedan")%>
 
-  </div>
-
+</div>
   <div class="field">
-    <%= form.label :"Driver Contact number" %>
+    <%= form.label :driverphn %>
     <%= form.text_field :driverphn %>
   </div>
 
@@ -32,22 +31,23 @@
     <%= form.select :destination, options_for_select([["Mochit","Mochit"],["Khao-San Road","Khao-San Road"],["Suvarnabhumi Airport","Suvarnabhumi Airport"],["Victoria Monument","Victoria Monument"],["Asiatique","Asiatique"]],"Mochit")%>
 
   </div>
-
   <div class="field">
     <%= form.label :seats %>
     <%= form.number_field :seats %>
   </div>
 
   <div class="field">
-    <%= form.label :"Time"  %>
-    <%= form.text_field :time, placeholder: "(HH:MM)" %>
-
-    
+    <%= form.label :time %>
+    <%= form.text_field :time %>
   </div>
 
   <div class="field">
-    <%= form.label :"Ride complete" %>
+    <%= form.label :complete %>
     <%= form.check_box :complete %>
+  </div>
+
+  <div class="field">
+  <%= form.hidden_field :customer_id, value: current_customer.id %>
   </div>
 
   <div class="actions">

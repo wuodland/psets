@@ -35,5 +35,10 @@
   <%= @ride.complete %>
 </p>
 
+<p>
+  <strong>Seatsleft:</strong>
+  <%= @ride.seatsleft %>
+</p>
+
 <%= link_to 'Edit', edit_ride_path(@ride) %> |
 <%= link_to 'Back', rides_path %>

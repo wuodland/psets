@@ -17,9 +17,11 @@ class RidesTest < ApplicationSystemTestCase
     fill_in "Carno", with: @ride.carno
     fill_in "Cartype", with: @ride.cartype
     fill_in "Complete", with: @ride.complete
+    fill_in "Customer", with: @ride.customer_id
     fill_in "Destination", with: @ride.destination
     fill_in "Driverphn", with: @ride.driverphn
     fill_in "Seats", with: @ride.seats
+    fill_in "Seatsleft", with: @ride.seatsleft
     fill_in "Time", with: @ride.time
     click_on "Create Ride"
 
@@ -34,9 +36,11 @@ class RidesTest < ApplicationSystemTestCase
     fill_in "Carno", with: @ride.carno
     fill_in "Cartype", with: @ride.cartype
     fill_in "Complete", with: @ride.complete
+    fill_in "Customer", with: @ride.customer_id
     fill_in "Destination", with: @ride.destination
     fill_in "Driverphn", with: @ride.driverphn
     fill_in "Seats", with: @ride.seats
+    fill_in "Seatsleft", with: @ride.seatsleft
     fill_in "Time", with: @ride.time
     click_on "Update Ride"
 

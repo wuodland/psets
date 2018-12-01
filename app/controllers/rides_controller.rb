@@ -65,14 +65,10 @@ class RidesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_ride
       @ride = Ride.find(params[:id])
-      
-    end
-    def set_time
-      @time = "#{hour} #{min}"
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ride_params
-      params.require(:ride).permit(:carno, :cartype, :driverphn, :destination, :seats, :time, :complete)
+      params.require(:ride).permit(:carno, :cartype, :driverphn, :destination, :seats, :time, :complete, :customer_id, :seatsleft)
     end
 end

@@ -8,6 +8,8 @@ one:
   seats: 1
   time: MyString
   complete: false
+  customer: one
+  seatsleft: 1
 
 two:
   carno: MyString
@@ -17,3 +19,5 @@ two:
   seats: 1
   time: MyString
   complete: false
+  customer: two
+  seatsleft: 1
