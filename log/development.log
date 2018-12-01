@@ -15298,3 +15298,1558 @@ Processing by TopicsController#index as HTML
 Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-16 02:31:24 +0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "psets_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (1180.5ms)[0m  [1m[35mCREATE DATABASE "psets_development" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (804.9ms)[0m  [1m[35mCREATE DATABASE "psets_test" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (143.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (107.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuotations (20181017102820)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (94.7ms)[0m  [1m[35mCREATE TABLE "quotations" ("id" bigserial primary key, "author_name" character varying, "category" character varying, "quote" text, "created_at" timestamp NOT NULL, "uploaded_at" timestamp, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181017102820_create_quotations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181017102820"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20181105160121)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (92.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:5
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:39
+  [1m[35m (49.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181105160121"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (13.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCustomers (20181106161211)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (86.7ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "role" character varying, "ban" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181106161211_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161211"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (20.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddDeviseToCustomers (20181106161245)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (88.6ms)[0m  [1m[35mALTER TABLE "customers" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:7
+  [1m[35m (88.9ms)[0m  [1m[35mALTER TABLE "customers" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "customers" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:15
+  [1m[35m (40.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:40
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_reset_password_token" ON "customers"  ("reset_password_token")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161245"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePosts (20181111173539)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (97.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "content" text, "customer_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_294f894e6c"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[35m (47.2ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_customer_id" ON "posts"  ("customer_id")[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181111173539"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 19:31:42.635693"], ["updated_at", "2018-11-15 19:31:42.635693"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-16 02:31:45 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 483ms (Views: 459.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 03:24:39 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 15:31:05 +0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 446ms (Views: 432.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 17:25:46 +0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateRides (20181201102347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (478.7ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "carno" character varying, "cartype" character varying, "driverphn" bigint, "destination" character varying, "seats" integer, "time" character varying, "complete" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181201102347_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201102347"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (19.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-12-01 17:25:58 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 320ms (Views: 313.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/phome.html" for 127.0.0.1 at 2018-12-01 17:26:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/topics/phome.html"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/topics/phome.html" for 127.0.0.1 at 2018-12-01 17:26:51 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#phome as HTML
+  Rendering topics/phome.html within layouts/application
+  Rendered topics/phome.html within layouts/application (0.7ms)
+Completed 200 OK in 218ms (Views: 211.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:27:14 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 225ms (Views: 215.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:27:16 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (99.7ms)
+  Rendered rides/new.html.erb within layouts/application (100.6ms)
+Completed 200 OK in 142ms (Views: 128.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 17:30:22 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:35:09 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 221ms (Views: 210.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:35:11 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (41.2ms)
+  Rendered rides/new.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 85ms (Views: 67.3ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 17:35:24 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d8799PcagaVcKnIXJ6FT3fVOND7t7qLNjOYAiulgaRUnj+bymexH1xz3kkP5qER06dbmH8Tdp6UNw/RkPM6inw==", "ride"=>{"carno"=>"1", "cartype"=>"car", "driverphn"=>"12", "queue_id"=>"2", "seats"=>"2", "time"=>"a", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameter: :queue_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.6ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "seats", "time", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "1"], ["cartype", "car"], ["driverphn", 12], ["seats", 2], ["time", "a"], ["complete", false], ["created_at", "2018-12-01 10:35:24.648994"], ["updated_at", "2018-12-01 10:35:24.648994"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (53.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/1
+Completed 302 Found in 59ms (ActiveRecord: 53.9ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-01 17:35:24 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 27.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rides/index.html" for 127.0.0.1 at 2018-12-01 17:35:40 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ride with 'id'=index):
+  
+app/controllers/rides_controller.rb:67:in `set_ride'
+Started GET "/rides/" for 127.0.0.1 at 2018-12-01 17:35:43 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-01 17:35:50 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/rides/1" for 127.0.0.1 at 2018-12-01 17:35:54 +0700
+Processing by RidesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"N12xO1zj9bzCmgWY9U+q1RQesNyOdvhpmIHuYxGoNrx4XskJtpfUoQnUu9mJyb4ULnHr5EScvnjGDU26tUgEwA==", "id"=>"1"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[36mRide Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rides" WHERE "rides"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/rides_controller.rb:57
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:57
+Redirected to http://localhost:3000/rides
+Completed 302 Found in 33ms (ActiveRecord: 29.9ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:35:54 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:36:27 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:36:29 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.7ms)
+  Rendered rides/new.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Mochit):
+    28: 
+    29:   <div class="field">
+    30:     <%= form.label :destination %>
+    31:     <%= form.select :queue_id, options_for_select([["Mochit",Mochit],["Khao-San Road",2],["Suvarnabhumi Airport",3],["Victoria Monument",4],["Asiatique",5]],"Mochit")%>
+    32: 
+    33:   </div>
+    34: 
+  
+app/views/rides/_form.html.erb:31:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121288227340'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121288227340'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121288340240'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:37:44 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.7ms)
+  Rendered rides/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 17:37:54 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QARE3GPX7XF0LJh5fAZJxQ7i4sTrJeRly6heNunKAoQPBzzuiaPMbL9iJjgAgF0ENI25/CHPonSVJP3vTSow+A==", "ride"=>{"carno"=>"1", "cartype"=>"car", "driverphn"=>"12", "destination"=>"1", "seats"=>"1", "time"=>"1", "complete"=>"0"}, "commit"=>"Create Ride"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.4ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["carno", "1"], ["cartype", "car"], ["driverphn", 12], ["destination", "1"], ["seats", 1], ["time", "1"], ["complete", false], ["created_at", "2018-12-01 10:37:54.462483"], ["updated_at", "2018-12-01 10:37:54.462483"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (39.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/2
+Completed 302 Found in 44ms (ActiveRecord: 40.0ms)
+
+
+Started GET "/rides/2" for 127.0.0.1 at 2018-12-01 17:37:54 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:03 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:21 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:22 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:38:24 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.9ms)
+  Rendered rides/new.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Mochit):
+    28: 
+    29:   <div class="field">
+    30:     <%= form.label :destination %>
+    31:     <%= form.select :destination, options_for_select([["Mochit",Mochit],["Khao-San Road",2],["Suvarnabhumi Airport",3],["Victoria Monument",4],["Asiatique",5]],"Mochit")%>
+    32: 
+    33:   </div>
+    34: 
+  
+app/views/rides/_form.html.erb:31:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121348996540'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121348996540'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121349038700'
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:38:35 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:38:36 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.1ms)
+  Rendered rides/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Mochit):
+    28: 
+    29:   <div class="field">
+    30:     <%= form.label :destination %>
+    31:     <%= form.select :destination, options_for_select([["Mochit",Mochit],["Khao-San Road",2],["Suvarnabhumi Airport",3],["Victoria Monument",4],["Asiatique",5]],"Mochit")%>
+    32: 
+    33:   </div>
+    34: 
+  
+app/views/rides/_form.html.erb:31:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121349044320'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121349044320'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121349097800'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:39:01 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (3.2ms)
+  Rendered rides/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 17:39:09 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o+enGnsQ0LtACuyItx15xd4SsCYfXf1uC98vPTsYKevs5N8okWTxpotEUsnLm20E5H3rHtW3u39VU4zkn/gblw==", "ride"=>{"carno"=>"1", "cartype"=>"car", "driverphn"=>"12", "destination"=>"1", "seats"=>"1", "time"=>"12", "complete"=>"0"}, "commit"=>"Create Ride"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.4ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["carno", "1"], ["cartype", "car"], ["driverphn", 12], ["destination", "1"], ["seats", 1], ["time", "12"], ["complete", false], ["created_at", "2018-12-01 10:39:09.648734"], ["updated_at", "2018-12-01 10:39:09.648734"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (58.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/3
+Completed 302 Found in 64ms (ActiveRecord: 58.8ms)
+
+
+Started GET "/rides/3" for 127.0.0.1 at 2018-12-01 17:39:09 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:40:01 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:40:01 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.5ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:40:02 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 17:40:02 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:40:07 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (3.3ms)
+  Rendered rides/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 17:40:15 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D/u+kuvgq+oC7ELEYP3wv4AKHNbQa4K/yHrtmkclF0lfuqWUhRZtmEIxopC+9OcWnJLO9/lYh9dJXxl0kovcww==", "ride"=>{"carno"=>"1", "cartype"=>"car", "driverphn"=>"12", "destination"=>"Mochit", "seats"=>"1", "time"=>"12", "complete"=>"0"}, "commit"=>"Create Ride"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (1.0ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["carno", "1"], ["cartype", "car"], ["driverphn", 12], ["destination", "Mochit"], ["seats", 1], ["time", "12"], ["complete", false], ["created_at", "2018-12-01 10:40:15.802360"], ["updated_at", "2018-12-01 10:40:15.802360"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (52.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/4
+Completed 302 Found in 59ms (ActiveRecord: 54.0ms)
+
+
+Started GET "/rides/4" for 127.0.0.1 at 2018-12-01 17:40:15 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:40:55 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (3.4ms)
+  Rendered rides/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:43:49 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (0.9ms)
+  Rendered rides/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:15: syntax error, unexpected tCONSTANT, expecting ')'
+...append=( form.label :Car Number );@output_buffer.safe_append...
+...                         ^~~~~~):
+  
+app/views/rides/_form.html.erb:15: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121295190520'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:44:06 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.6ms)
+  Rendered rides/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:44:34 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.3ms)
+  Rendered rides/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:44:37 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.0ms)
+  Rendered rides/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:45:36 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (3.2ms)
+  Rendered rides/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:48:53 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (255.0ms)
+  Rendered rides/new.html.erb within layouts/application (255.8ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00005647f32e90c8>:0x00007f8ccc147480>):
+    40: 
+    41:   <div class="field">
+    42:     <%= form.label :time %>
+    43:     <%= f.select :time, '1'..'4' %>
+    44:     
+    45:   </div>
+    46: 
+  
+app/views/rides/_form.html.erb:43:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121347989680'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121347989680'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121348021960'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:49:05 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.5ms)
+  Rendered rides/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:51:06 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.1ms)
+  Rendered rides/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 73ms (Views: 52.9ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 17:51:19 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"reb/d9bi/fPcrC3KMC8Ngi+2TLBurDHLoijHeD6G7b/i5YdFPJbc7hfik4tMqRlDFdkXiKRGd9r8pGShmmbfww==", "ride"=>{"carno"=>"ew", "cartype"=>"Sedan", "driverphn"=>"qewr", "destination"=>"Suvarnabhumi Airport", "seats"=>"5", "hour"=>"1", "min"=>"3", "complete"=>"0"}, "commit"=>"Create Ride"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'hour' for Ride.):
+  
+app/controllers/rides_controller.rb:27:in `create'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:52:24 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.2ms)
+  Rendered rides/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 36.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:56:47 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (1.4ms)
+  Rendered rides/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:43: syntax error, unexpected ',', expecting ')'
+... form.select :hour, ('0'..'23','0'..'23') );@output_buffer.s...
+...                              ^):
+  
+app/views/rides/_form.html.erb:43: syntax error, unexpected ',', expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121286345320'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:59:46 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (1.8ms)
+  Rendered rides/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:42: syntax error, unexpected '=', expecting ')'
+...fer.append=( form.label :time = hour + min );@output_buffer....
+...                              ^):
+  
+app/views/rides/_form.html.erb:42: syntax error, unexpected '=', expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121291573160'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 17:59:46 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (1.5ms)
+  Rendered rides/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:42: syntax error, unexpected '=', expecting ')'
+...fer.append=( form.label :time = hour + min );@output_buffer....
+...                              ^):
+  
+app/views/rides/_form.html.erb:42: syntax error, unexpected '=', expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121294618440'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:01:22 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (305.8ms)
+  Rendered rides/new.html.erb within layouts/application (306.7ms)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `hour' for #<#<Class:0x00007f8cc5943ca8>:0x00007f8cc01bcdb8>):
+    42:     <%= form.label :time=  %>
+    43:     <%= form.select :hour, '0'..'23' %>
+    44:     <%= form.select :min, '0'..'59' %>
+    45:     <% time = hour + min%>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121247564680'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121247564680'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121247599820'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:02:15 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (247.5ms)
+  Rendered rides/new.html.erb within layouts/application (249.4ms)
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `hour' for #<#<Class:0x00007f8cc5943ca8>:0x00007f8ccc1139a0>):
+    42:     <%= form.label :time=  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <% time = hour + min%>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121347883540'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121347883540'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121347940700'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:02:24 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (9.4ms)
+  Rendered rides/new.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time=  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <% time = @hour + @min%>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121284051140'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121284051140'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121284175100'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:03:27 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.3ms)
+  Rendered rides/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:03:39 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BExVYrPCWy6CTiJbZF1a+1h6v+nz14BKCrVk6DhX0yhLTy1QWbZ6M0kAnBoY2046YhXk0Tk9xltUOccxnLfhVA==", "ride"=>{"carno"=>"ew", "cartype"=>"Sedan", "driverphn"=>"sdsd", "destination"=>"Mochit", "seats"=>"1", "@hour"=>"1", "@min"=>"3", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameters: :@hour, :@min
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.4ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "ew"], ["cartype", "Sedan"], ["driverphn", 0], ["destination", "Mochit"], ["seats", 1], ["complete", false], ["created_at", "2018-12-01 11:03:39.537611"], ["updated_at", "2018-12-01 11:03:39.537611"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (37.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/5
+Completed 302 Found in 44ms (ActiveRecord: 37.9ms)
+
+
+Started GET "/rides/5" for 127.0.0.1 at 2018-12-01 18:03:39 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rides/5" for 127.0.0.1 at 2018-12-01 18:05:31 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:05:34 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (1.6ms)
+  Rendered rides/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:46: syntax error, unexpected '<', expecting ')'
+  </div>
+  ^
+/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:51: unknown regexp options - dv
+/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:53: syntax error, unexpected '<'
+  <div class="actions">
+  ^
+/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:55: syntax error, unexpected '<', expecting ')'
+  </div>
+  ^
+/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:60: unterminated regexp meets end of file
+          end
+             ^
+/home/paval/code/wae/rails/web18-17/app/views/rides/_form.html.erb:60: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/rides/_form.html.erb:46: syntax error, unexpected '<', expecting ')'
+app/views/rides/_form.html.erb:51: unknown regexp options - dv
+app/views/rides/_form.html.erb:53: syntax error, unexpected '<'
+app/views/rides/_form.html.erb:55: syntax error, unexpected '<', expecting ')'
+app/views/rides/_form.html.erb:60: unterminated regexp meets end of file
+app/views/rides/_form.html.erb:60: syntax error, unexpected end-of-input, expecting ')'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121180464460'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:05:46 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.2ms)
+  Rendered rides/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:12:13 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.6ms)
+  Rendered rides/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 59ms (Views: 40.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:12:14 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.1ms)
+  Rendered rides/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:12:15 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (3.8ms)
+  Rendered rides/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:12:21 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptnD5s5CnQG73MLHYErnirbdqtDXlGmBAJKTvnEZ3dXp2rvUJDa8HHCSfIYczPNLjLLx6B1+L5BeHjBn1fnvqQ==", "ride"=>{"carno"=>"1", "cartype"=>"Sedan", "driverphn"=>"12", "destination"=>"Mochit", "seats"=>"1", "hour"=>"0", "min"=>"0", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameters: :hour, :min
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.7ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "1"], ["cartype", "Sedan"], ["driverphn", 12], ["destination", "Mochit"], ["seats", 1], ["complete", false], ["created_at", "2018-12-01 11:12:21.615187"], ["updated_at", "2018-12-01 11:12:21.615187"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (57.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/6
+Completed 302 Found in 63ms (ActiveRecord: 58.0ms)
+
+
+Started GET "/rides/6" for 127.0.0.1 at 2018-12-01 18:12:21 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/6" for 127.0.0.1 at 2018-12-01 18:13:00 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRide Load (0.2ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 45.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:13:03 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.7ms)
+  Rendered rides/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:13:04 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.0ms)
+  Rendered rides/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:13:11 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wl0CKUZvtwqS7m9wJzoycC6pvfR7A570L9V7RdDenU8VXnobrBuWF1mg0TFbvCaxFMbmzLHp2OVxWdicdD6vMw==", "ride"=>{"carno"=>"111", "cartype"=>"SUV", "driverphn"=>"1234", "destination"=>"Khao-San Road", "seats"=>"1", "hour"=>"0", "min"=>"0", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameters: :hour, :min
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.3ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "111"], ["cartype", "SUV"], ["driverphn", 1234], ["destination", "Khao-San Road"], ["seats", 1], ["complete", false], ["created_at", "2018-12-01 11:13:11.204484"], ["updated_at", "2018-12-01 11:13:11.204484"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (49.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/7
+Completed 302 Found in 53ms (ActiveRecord: 50.2ms)
+
+
+Started GET "/rides/7" for 127.0.0.1 at 2018-12-01 18:13:11 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/7" for 127.0.0.1 at 2018-12-01 18:13:36 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 62ms (Views: 57.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:13:39 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.6ms)
+  Rendered rides/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:13:48 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/UyL0hOeaYeq7+y655J84MWoiSLmnKBwgaMKNUco5n6yT/Pg+epImmGhUvubFGgh/8fSGix25mHfL6ns48jUAg==", "ride"=>{"carno"=>"12121", "cartype"=>"SUV", "driverphn"=>"122121", "destination"=>"Mochit", "seats"=>"1", "@hour"=>"0", "@min"=>"0", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameters: :@hour, :@min
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.7ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "12121"], ["cartype", "SUV"], ["driverphn", 122121], ["destination", "Mochit"], ["seats", 1], ["complete", false], ["created_at", "2018-12-01 11:13:48.410469"], ["updated_at", "2018-12-01 11:13:48.410469"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (67.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/8
+Completed 302 Found in 73ms (ActiveRecord: 68.1ms)
+
+
+Started GET "/rides/8" for 127.0.0.1 at 2018-12-01 18:13:48 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:14:33 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:18:06 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:18:06 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:18:06 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:18:07 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:08 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.8ms)
+  Rendered rides/new.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121294595380'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121294595380'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121294630240'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:15 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.9ms)
+  Rendered rides/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= @time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121294568760'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121294568760'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121294622440'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:15 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.3ms)
+  Rendered rides/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= @time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121294441840'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121294441840'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121294476360'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:16 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.5ms)
+  Rendered rides/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= @time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121293041140'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121293041140'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121293246920'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:16 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.4ms)
+  Rendered rides/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= @time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121180647660'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121180647660'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121180765020'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:18:16 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (8.2ms)
+  Rendered rides/new.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    42:     <%= form.label :time  %>
+    43:     <%= form.select :@hour, '0'..'23' %>
+    44:     <%= form.select :@min, '0'..'59' %>
+    45:     <%= @time = @hour + @min %>
+    46:     
+    47:   </div>
+    48: 
+  
+app/views/rides/_form.html.erb:45:in `block in _app_views_rides__form_html_erb__2261331100618948032_70121348302620'
+app/views/rides/_form.html.erb:1:in `_app_views_rides__form_html_erb__2261331100618948032_70121348302620'
+app/views/rides/new.html.erb:3:in `_app_views_rides_new_html_erb___2403617232668585739_70121348687940'
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:20:51 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.9ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:20:52 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.6ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:20:53 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.4ms)
+  Rendered rides/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (367.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_development"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (534.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "psets_test"[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (1146.8ms)[0m  [1m[35mCREATE DATABASE "psets_development" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (860.4ms)[0m  [1m[35mCREATE DATABASE "psets_test" ENCODING = 'unicode'[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (125.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (97.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateQuotations (20181017102820)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (93.9ms)[0m  [1m[35mCREATE TABLE "quotations" ("id" bigserial primary key, "author_name" character varying, "category" character varying, "quote" text, "created_at" timestamp NOT NULL, "uploaded_at" timestamp, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181017102820_create_quotations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181017102820"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (15.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to DeviseCreateUsers (20181105160121)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (76.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:5
+  [1m[35m (40.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:39
+  [1m[35m (59.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181105160121_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181105160121"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateCustomers (20181106161211)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (81.9ms)[0m  [1m[35mCREATE TABLE "customers" ("id" bigserial primary key, "name" character varying, "role" character varying, "ban" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181106161211_create_customers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161211"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to AddDeviseToCustomers (20181106161245)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (73.0ms)[0m  [1m[35mALTER TABLE "customers" ADD "email" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:7
+  [1m[35m (88.7ms)[0m  [1m[35mALTER TABLE "customers" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "customers" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:15
+  [1m[35m (38.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_email" ON "customers"  ("email")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:40
+  [1m[35m (41.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_customers_on_reset_password_token" ON "customers"  ("reset_password_token")[0m
+  ↳ db/migrate/20181106161245_add_devise_to_customers.rb:41
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181106161245"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreatePosts (20181111173539)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (98.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "content" text, "customer_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_294f894e6c"
+FOREIGN KEY ("customer_id")
+  REFERENCES "customers" ("id")
+)[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[35m (41.4ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_customer_id" ON "posts"  ("customer_id")[0m
+  ↳ db/migrate/20181111173539_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181111173539"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Migrating to CreateRides (20181201102347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (77.3ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "carno" character varying, "cartype" character varying, "driverphn" bigint, "destination" character varying, "seats" integer, "time" character varying, "complete" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181201102347_create_rides.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181201102347"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-01 11:21:22.124580"], ["updated_at", "2018-12-01 11:21:22.124580"]]
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2034748870098410970)[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:21:27 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (18.4ms)
+  Rendered rides/new.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 243ms (Views: 223.6ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:21:34 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xwEnI4mj1sl+KdKNO+Z4hxSN/wzikf8YzwYFIBvSxxqIAl8RY9f31LVnbMxHYGxGLuKkNCh7uQmRiqb5vzL1Zg==", "ride"=>{"carno"=>"1", "cartype"=>"Sedan", "driverphn"=>"1", "destination"=>"Mochit", "seats"=>"1", "@hour"=>"0", "@min"=>"0", "complete"=>"0"}, "commit"=>"Create Ride"}
+Unpermitted parameters: :@hour, :@min
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (1.6ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["carno", "1"], ["cartype", "Sedan"], ["driverphn", 1], ["destination", "Mochit"], ["seats", 1], ["complete", false], ["created_at", "2018-12-01 11:21:34.280483"], ["updated_at", "2018-12-01 11:21:34.280483"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (44.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/1
+Completed 302 Found in 51ms (ActiveRecord: 46.3ms)
+
+
+Started GET "/rides/1" for 127.0.0.1 at 2018-12-01 18:21:34 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:23:24 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 233ms (Views: 220.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 18:23:29 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 18:23:31 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/phome.html" for 127.0.0.1 at 2018-12-01 18:23:34 +0700
+Processing by TopicsController#phome as HTML
+  Rendering topics/phome.html within layouts/application
+  Rendered topics/phome.html within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/phome.html" for 127.0.0.1 at 2018-12-01 18:25:33 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#phome as HTML
+  Rendering topics/phome.html within layouts/application
+  Rendered topics/phome.html within layouts/application (0.4ms)
+Completed 200 OK in 226ms (Views: 219.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/phome.html" for 127.0.0.1 at 2018-12-01 18:25:34 +0700
+Processing by TopicsController#phome as HTML
+  Rendering topics/phome.html within layouts/application
+  Rendered topics/phome.html within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides" for 127.0.0.1 at 2018-12-01 18:25:39 +0700
+Processing by RidesController#index as HTML
+  Rendering rides/index.html.erb within layouts/application
+  [1m[36mRide Load (1.0ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/views/rides/index.html.erb:20
+  Rendered rides/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 18:25:41 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (10.7ms)
+  Rendered rides/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rides" for 127.0.0.1 at 2018-12-01 18:25:49 +0700
+Processing by RidesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UaDySj1s2WaRxiMscz7/7aZKBsVn+BFI9iAHv71E5QAB4elMU5ofFNEbw3itN+hEutLU5E7LFCB3BfNRaOouig==", "ride"=>{"carno"=>"2", "cartype"=>"SUV", "driverphn"=>"2", "destination"=>"Mochit", "seats"=>"2", "time"=>"2", "complete"=>"0"}, "commit"=>"Create Ride"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[36mRide Create (0.6ms)[0m  [1m[32mINSERT INTO "rides" ("carno", "cartype", "driverphn", "destination", "seats", "time", "complete", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["carno", "2"], ["cartype", "SUV"], ["driverphn", 2], ["destination", "Mochit"], ["seats", 2], ["time", "2"], ["complete", false], ["created_at", "2018-12-01 11:25:49.538199"], ["updated_at", "2018-12-01 11:25:49.538199"]]
+  ↳ app/controllers/rides_controller.rb:30
+  [1m[35m (49.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rides_controller.rb:30
+Redirected to http://localhost:3000/rides/2
+Completed 302 Found in 54ms (ActiveRecord: 49.9ms)
+
+
+Started GET "/rides/2" for 127.0.0.1 at 2018-12-01 18:25:49 +0700
+Processing by RidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT  "rides".* FROM "rides" WHERE "rides"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/rides_controller.rb:67
+  Rendering rides/show.html.erb within layouts/application
+  Rendered rides/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.5ms)
+
+

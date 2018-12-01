@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Carno:</strong>
+  <%= @ride.carno %>
+</p>
+
+<p>
+  <strong>Cartype:</strong>
+  <%= @ride.cartype %>
+</p>
+
+<p>
+  <strong>Driverphn:</strong>
+  <%= @ride.driverphn %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @ride.destination %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @ride.seats %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @ride.time %>
+</p>
+
+<p>
+  <strong>Complete:</strong>
+  <%= @ride.complete %>
+</p>
+
+<%= link_to 'Edit', edit_ride_path(@ride) %> |
+<%= link_to 'Back', rides_path %>

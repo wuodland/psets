@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :rides
   resources :posts
   get 'user/index'
   devise_for :customers
@@ -22,10 +23,10 @@ Rails.application.routes.draw do
   get '/ps2/:id/kill(.:format)' => 'ps2#kill', :as => 'killed'
   get 'ps2/del'
   post 'ps2/import' => 'ps2#import'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get   '/customers/:id/ban(.:format)'  => 'customers#ban', :as => 'ban'
   get   '/user/index', :as => 'user'
   get   '/customers/:id/unban(.:format)'  => 'customers#unban', :as => 'unban'
   get 'customers/new'
   get 'topics/lol'
+  get 'topics/phome'
 end

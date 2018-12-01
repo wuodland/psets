@@ -1,0 +1,56 @@
+<%= form_with(model: ride, local: true) do |form| %>
+  <% if ride.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ride.errors.count, "error") %> prohibited this ride from being saved:</h2>
+
+      <ul>
+      <% ride.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :carno %>
+    <%= form.text_field :carno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cartype %>
+    <%= form.select :cartype, options_for_select([["Sedan","Sedan"],["SUV","SUV"],["Coupé","Coupé"],["Van","Van"],["Other","Other"]],"Sedan")%>
+
+  </div>
+
+  <div class="field">
+    <%= form.label :driverphn %>
+    <%= form.text_field :driverphn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :destination %>
+    <%= form.select :destination, options_for_select([["Mochit","Mochit"],["Khao-San Road","Khao-San Road"],["Suvarnabhumi Airport","Suvarnabhumi Airport"],["Victoria Monument","Victoria Monument"],["Asiatique","Asiatique"]],"Mochit")%>
+
+  </div>
+
+  <div class="field">
+    <%= form.label :seats %>
+    <%= form.number_field :seats %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time  %>
+    <%= form.text_field :time %>
+
+    
+  </div>
+
+  <div class="field">
+    <%= form.label :complete %>
+    <%= form.check_box :complete %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
