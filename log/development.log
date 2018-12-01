@@ -16935,3 +16935,110 @@ Processing by RidesController#new as HTML
 Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:14:47 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (16.5ms)
+  Rendered rides/new.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (ExecJS::RubyRacerRuntime is not supported. Please replace therubyracer with mini_racer in your Gemfile or use Node.js as ExecJS runtime.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3625879045849368023_47099198407200'
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:06 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paval/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (25.4ms)
+  Rendered rides/new.html.erb within layouts/application (27.3ms)
+Started GET "/" for 127.0.0.1 at 2018-12-01 19:18:32 +0700
+Completed 200 OK in 38066ms (Views: 38038.9ms | ActiveRecord: 4.9ms)
+
+
+Processing by TopicsController#index as HTML
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:44 +0700
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:44 +0700
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:44 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (7.4ms)
+  Rendered rides/new.html.erb within layouts/application (11.4ms)
+Processing by RidesController#new as HTML
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (6.0ms)
+  Rendered rides/new.html.erb within layouts/application (11.2ms)
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.2ms)
+  Rendered rides/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1010ms (Views: 1005.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1042ms (Views: 1037.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1044ms (Views: 1041.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:45 +0700
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:18:45 +0700
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Processing by RidesController#new as HTML
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (5.4ms)
+  Rendered rides/_form.html.erb (3.8ms)
+  Rendered rides/new.html.erb within layouts/application (18.7ms)
+  Rendered rides/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1819ms (Views: 728.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 783ms (Views: 781.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 866ms (Views: 864.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rides/new" for 127.0.0.1 at 2018-12-01 19:19:03 +0700
+Processing by RidesController#new as HTML
+  Rendering rides/new.html.erb within layouts/application
+  Rendered rides/_form.html.erb (4.2ms)
+  Rendered rides/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 259ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 19:19:07 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 235ms (Views: 234.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 19:22:10 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27970ms (Views: 27968.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-01 19:24:57 +0700
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 373ms (Views: 372.2ms | ActiveRecord: 0.0ms)
+
+
