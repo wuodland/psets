@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Customer:</strong>
-  <%= @booking.customer %>
+  <strong>Customer Name:</strong>
+  <%= @booking.customer.name %>
 </p>
 
 <p>
@@ -11,27 +11,27 @@
 </p>
 
 <p>
-  <strong>Ride:</strong>
-  <%= @booking.ride %>
+  <strong>Ride ID:</strong>
+  <%= @booking.ride.id %>
 </p>
 
 <p>
-  <strong>Driverphn:</strong>
+  <strong>Driver Contact Number:</strong>
   <%= @booking.driverphn %>
 </p>
 
 <p>
-  <strong>Carno:</strong>
+  <strong>Registration Number of Car:</strong>
   <%= @booking.carno %>
 </p>
 
 <p>
-  <strong>Cartype:</strong>
+  <strong>Type of vehicle:</strong>
   <%= @booking.cartype %>
 </p>
 
 <p>
-  <strong>Seatsleft:</strong>
+  <strong>Number of seats left:</strong>
   <%= @booking.ride.seatsleft %>
 </p>
 

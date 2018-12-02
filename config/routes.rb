@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :topups
   resources :bookings
   resources :rides
   resources :posts

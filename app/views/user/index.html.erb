@@ -1,15 +1,15 @@
 <% if user_signed_in? %>
 
 <h2>User Management and Statistics</h2>
-<p>Source code @ /app/views/user/index.html.erb</p>
+
 <h3>List of Customers</h3>
 
-<table>
+<table><table class="ui celled table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Role</th>
-      <th>Ban</th>
+      <th>Baned Status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,9 +17,9 @@
   <tbody>
     <% @customers.each do |customer| %>
       <tr>
-        <td><%= customer.name %></td>
-        <td><%= customer.role %></td>
-        <td><%= customer.ban %></td>
+        <td data-label><%= customer.name %></td>
+        <td data-label><%= customer.role %></td>
+        <td ><%= customer.ban %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
         <td><%= link_to 'Delete User', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>

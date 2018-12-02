@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_02_085801) do
+ActiveRecord::Schema.define(version: 2018_12_02_174757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,6 +76,14 @@ ActiveRecord::Schema.define(version: 2018_12_02_085801) do
     t.index ["customer_id"], name: "index_rides_on_customer_id"
   end
 
+  create_table "topups", force: :cascade do |t|
+    t.bigint "customer_id"
+    t.integer "balance"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["customer_id"], name: "index_topups_on_customer_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -92,4 +100,5 @@ ActiveRecord::Schema.define(version: 2018_12_02_085801) do
   add_foreign_key "bookings", "rides"
   add_foreign_key "posts", "customers"
   add_foreign_key "rides", "customers"
+  add_foreign_key "topups", "customers"
 end

@@ -25,8 +25,9 @@
   <div id="user_status"></div>
     <% if user_signed_in? %>
       Welcome <%= current_user.email %>! Not you?     
-     <%= link_to "User Management", user_index_path %>
-     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+     <%= link_to "User Management", user_index_path,  class: "active yellow item" %>
+     <%= link_to "Topups", topups_path , class: "active white item" %>
+     <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "active orange item" %>
      <% elsif customer_signed_in? %>
      <%if current_customer.ban==true %>
     <%= render 'banned' %>
@@ -34,7 +35,7 @@
      Welcome <%= current_customer.email %>! Not you?
      <%= link_to "Customer HomePage", customers_path %>
      <%= link_to 'Posts', posts_path %><br>
-    <%= link_to "Sign out", destroy_customer_session_path, method: :delete %>
+    <%= link_to "Sign out", destroy_customer_session_path, method: :delete, class: "active orange item" %>
     </div>
     <%end%>  
 

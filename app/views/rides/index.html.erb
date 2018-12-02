@@ -3,7 +3,7 @@
 <h1>Rides</h1>
 
 <table>
-  <thead>
+  <thead><table class="ui celled table">
     <tr>
       <th>Carno</th>
       <th>Cartype</th>
@@ -20,20 +20,21 @@
   <tbody>
     <% @rides.each do |ride| %>
       <tr>
-        <td><%= ride.carno %></td>
-        <td><%= ride.cartype %></td>
-        <td><%= ride.driverphn %></td>
-        <td><%= ride.destination %></td>
-        <td><%= ride.seats %></td>
-        <td><%= ride.time %></td>
-        <td><%= ride.complete %></td>
-        <td><%= ride.seatsleft %></td>
-        <td><%= link_to 'Show', ride %></td>
+        <td data-label><%= ride.carno %></td>
+        <td data-label><%= ride.cartype %></td>
+        <td data-label><%= ride.driverphn %></td>
+        <td data-label><%= ride.destination %></td>
+        <td data-label><%= ride.seats %></td>
+        <td data-label><%= ride.time %></td>
+        <td data-label><%= ride.complete %></td>
+        <td data-label><%= ride.seatsleft %></td>
+        <td data-label><%= link_to 'Show', ride %></td>
         
     <% end %>
+    
+
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Ride', new_ride_path %>

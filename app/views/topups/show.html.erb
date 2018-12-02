@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @topup.customer %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @topup.balance %>
+</p>
+
+<%= link_to 'Edit', edit_topup_path(@topup) %> |
+<%= link_to 'Back', topups_path %>
