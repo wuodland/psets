@@ -18,9 +18,9 @@
   <tbody>
     <% @bookings.each do |booking| %>
       <tr>
-        <td><%= booking.customer %></td>
+        <td><%= booking.customer.name %></td>
         <td><%= booking.destination %></td>
-        <td><%= booking.ride %></td>
+        <td><%= booking.ride.id %></td>
         <td><%= booking.driverphn %></td>
         <td><%= booking.carno %></td>
         <td><%= booking.cartype %></td>

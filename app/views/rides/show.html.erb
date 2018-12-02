@@ -35,9 +35,7 @@
   <%= @ride.complete %>
 </p>
 
-<p>
-  <strong>Seatsleft:</strong>
-  <%= @ride.seatsleft %>
+
 </p>
 
 <%= form_with(model: Booking.new, local: true) do |form| %>
@@ -47,6 +45,7 @@
     <%= form.hidden_field :carno, value: @ride.carno %>
     <%= form.hidden_field :driverphn, value: @ride.driverphn %>
     <%= form.hidden_field :cartype, value: @ride.cartype %>
+    <%= form.hidden_field :seatsleft, value: (@ride.seatsleft-1) %>
 
   <div class="actions">
     <%= form.submit %>

@@ -5,6 +5,7 @@ class RidesController < ApplicationController
   # GET /rides.json
   def index
     @rides = Ride.all
+   
   end
 
   # GET /rides/1
@@ -25,6 +26,7 @@ class RidesController < ApplicationController
   # POST /rides.json
   def create
     @ride = Ride.new(ride_params)
+    @ride.seatsleft = @ride.seats
 
     respond_to do |format|
       if @ride.save

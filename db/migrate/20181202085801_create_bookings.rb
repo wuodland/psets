@@ -7,6 +7,7 @@ class CreateBookings < ActiveRecord::Migration[5.2]
       t.bigint :driverphn
       t.string :carno
       t.string :cartype
+      t.integer :seatsleft
 
       t.timestamps
     end

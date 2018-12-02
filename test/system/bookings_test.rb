@@ -20,6 +20,7 @@ class BookingsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @booking.destination
     fill_in "Driverphn", with: @booking.driverphn
     fill_in "Ride", with: @booking.ride_id
+    fill_in "Seatsleft", with: @booking.seatsleft
     click_on "Create Booking"
 
     assert_text "Booking was successfully created"
@@ -36,6 +37,7 @@ class BookingsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @booking.destination
     fill_in "Driverphn", with: @booking.driverphn
     fill_in "Ride", with: @booking.ride_id
+    fill_in "Seatsleft", with: @booking.seatsleft
     click_on "Update Booking"
 
     assert_text "Booking was successfully updated"

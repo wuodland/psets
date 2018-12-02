@@ -49,6 +49,7 @@
   <div class="field">
   <%= form.hidden_field :customer_id, value: current_customer.id %>
   </div>
+  <%= hidden_field_tag :@seatsleft, @seats %>
 
   <div class="actions">
     <%= form.submit %>

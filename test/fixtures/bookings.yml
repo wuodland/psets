@@ -7,6 +7,7 @@ one:
   driverphn: 
   carno: MyString
   cartype: MyString
+  seatsleft: 1
 
 two:
   customer: two
@@ -15,3 +16,4 @@ two:
   driverphn: 
   carno: MyString
   cartype: MyString
+  seatsleft: 1
