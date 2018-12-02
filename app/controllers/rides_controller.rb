@@ -11,6 +11,7 @@ class RidesController < ApplicationController
   # GET /rides/1
   # GET /rides/1.json
   def show
+    
   end
 
   # GET /rides/new

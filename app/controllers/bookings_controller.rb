@@ -25,9 +25,15 @@ class BookingsController < ApplicationController
   # POST /bookings.json
   def create
     @booking = Booking.new(booking_params)
-    @booking.seatsleft -= 1 
+    @ride = Ride.find booking_params[:ride_id]
+
+    #logger = Logger.new STDOUT
+    #logger.info "LALLALALAAL"
+    seatsleft =  @ride.seatsleft
     respond_to do |format|
       if @booking.save
+        @ride.seatsleft = seatsleft -1
+        @ride.save
         format.html { redirect_to @booking, notice: 'Booking was successfully created.' }
         format.json { render :show, status: :created, location: @booking }
       else

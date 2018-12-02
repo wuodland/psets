@@ -45,8 +45,7 @@
     <%= form.hidden_field :carno, value: @ride.carno %>
     <%= form.hidden_field :driverphn, value: @ride.driverphn %>
     <%= form.hidden_field :cartype, value: @ride.cartype %>
-    <%= form.hidden_field :seatsleft, value: (@ride.seatsleft-1) %>
-
+    # <%= form.hidden_field :seatsleft, value: (@ride.seatsleft-1) %>
   <div class="actions">
     <%= form.submit %>
   </div>
