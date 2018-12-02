@@ -21,7 +21,8 @@
   <a href="#" class="item"><strong>RidersPool</strong></a>
 <%= link_to "Home", root_path, class: "active blue item" %>
 <%= link_to "Rides", rides_path, class: "active red item" %>
-  <div id="user_status">
+<%= link_to "Bookings", bookings_path, class: "active green item" %>
+  <div id="user_status"></div>
     <% if user_signed_in? %>
       Welcome <%= current_user.email %>! Not you?     
      <%= link_to "User Management", user_index_path %>
@@ -36,6 +37,8 @@
     <%= link_to "Sign out", destroy_customer_session_path, method: :delete %>
     </div>
     <%end%>  
+
+    
      <% else %>
      <div class="right menu">
       <%= link_to "Sign up(customer)", new_customer_path %> or
