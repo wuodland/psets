@@ -31,4 +31,5 @@ Rails.application.routes.draw do
   get 'topics/phome'
   root 'topics#phome'
   get 'topics/index'
+
 end
