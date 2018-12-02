@@ -8,14 +8,13 @@ Rails.application.routes.draw do
   post 'create_customer' => 'customers#create', as: :create_customer
   devise_for :users
   get 'ps3/index'
-  root 'topics#index'
+  #root 'topics#index'
   get 'ps2/index'
   get 'ps2/quotations', :as => 'quote'
   get 'ps1/index'
   get 'ps1/news'
   get 'ps1/divide'
   get '/ps2_db', :to => redirect('/ps2_db')
-  root 'topics#index'
   get 'ps2/export_to_json', as:'export_to_json'
   get 'ps2/export_to_xml', as:'export_to_xml'
   post 'ps2/quotations'
@@ -30,4 +29,6 @@ Rails.application.routes.draw do
   get 'customers/new'
   get 'topics/lol'
   get 'topics/phome'
+  root 'topics#phome'
+  get 'topics/index'
 end

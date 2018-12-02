@@ -1,3 +1,9 @@
+<div class="ui relaxed equal width grid">
+  <div class="ui row">
+    <div class="ui four wide column"></div>
+    <div class="ui eight wide column segment">
+<h2 class="ui center aligned dividing header"><i class="signup icon"></i>Sign up</h2>
+
 <%= form_with(model: customer, local: true, url: create_customer_url) do |form| %>
   <% if customer.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +17,23 @@
     </div>
   <% end %>
 
+  <div class="field ">
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
-  </div>
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.email_field :email %>
-  </div>
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+</div>
+            <%= form.label :email %>
+            <%= form.email_field :email, autofocus: true ,placeholder: "john@example.com"%>
+          </div>
+
+          <div class="field ">
+            <%= form.label :password %>
+            <%= form.password_field :password, autofocus: true ,placeholder: "6 chars minimum"%>
+              <% if @minimum_password_length %>
+              <div class="ui pointing below label">
+                  <%= @minimum_password_length %> characters minimum
+              </div>
+<% end %>
   </div>
 
   <div class="field">
@@ -33,3 +45,8 @@
     <%= form.submit %>
   </div>
 <% end %>
+</div>
+</div>
+</div>
+</div>
+</div>
