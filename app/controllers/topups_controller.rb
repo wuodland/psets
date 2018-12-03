@@ -1,3 +1,5 @@
+#Topups can only be added when signed in via admins user(check layouts/application.html.erb for the necessary info and login URL)
+
 class TopupsController < ApplicationController
   before_action :set_topup, only: [:show, :edit, :update, :destroy]
   before_action :customer_list
