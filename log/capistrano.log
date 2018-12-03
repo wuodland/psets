@@ -42931,3 +42931,8 @@ https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#sup
   INFO [e200cf4c] Running /usr/bin/env echo "Branch master (at 9dbfe3031ced90811aa308001dd32899dd4e238a) deployed as release 20181202185826 by paval" >> /home/deploy/psets/revisions.log as deploy@web17
  DEBUG [e200cf4c] Command: cd /home/deploy/psets/releases && ( export HTTP_PROXY="192.41.170.23:3128" HTTPS_PROXY="192.41.170.23:3128" BAZOOKA_USER="st119967" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.1" ; /usr/bin/env echo "Branch master (at 9dbfe3031ced90811aa308001dd32899dd4e238a) deployed as release 20181202185826 by paval" >> /home/deploy/psets/revisions.log )
   INFO [7dcc56e9] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-12-03 08:47:03 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a830d493] Running [ -d $HOME/.rbenv ] as deploy@web17
+ DEBUG [a830d493] Command: [ -d $HOME/.rbenv ]
