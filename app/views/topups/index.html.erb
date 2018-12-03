@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Topups</h1>
-
+<% if user_signed_in? %>
 <table><table class="ui celled table">
   <thead>
     <tr>
@@ -31,3 +31,6 @@
 <button class="ui button">
 <%= link_to 'New Topup', new_topup_path %>
 </button>
+<%else %>
+<%= render 'noauth' %>
+<% end %> 
